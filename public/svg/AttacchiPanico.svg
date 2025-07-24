@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100" height="100">
+    <!-- Cerchio principale che rappresenta la persona -->
+    <circle cx="60" cy="60" r="40" fill="white" stroke="#4682B4" stroke-width="3"/>
+    
+    <!-- Espressione di panico/allarme -->
+    <circle cx="45" cy="50" r="5" fill="#4682B4"/> <!-- Occhio sinistro spalancato -->
+    <circle cx="75" cy="50" r="5" fill="#4682B4"/> <!-- Occhio destro spalancato -->
+    <path d="M45 70 Q60 75 75 70" fill="none" stroke="#4682B4" stroke-width="3"/> <!-- Bocca aperta in sorpresa -->
+    
+    <!-- Sopracciglia alzate in allarme -->
+    <path d="M38 40 L52 35" stroke="#4682B4" stroke-width="3" fill="none"/>
+    <path d="M68 35 L82 40" stroke="#4682B4" stroke-width="3" fill="none"/>
+    
+    <!-- Gocce di sudore -->
+    <path d="M30 45 Q28 50 30 55" fill="#87CEFA" stroke="#4682B4"/>
+    <path d="M90 45 Q92 50 90 55" fill="#87CEFA" stroke="#4682B4"/>
+    
+    <!-- Battito cardiaco accelerato (ECG) -->
+    <path d="M15 60 L25 60 L30 40 L40 80 L45 60 L105 60" fill="none" stroke="#E98074" stroke-width="3"/>
+    
+    <!-- Onde concentriche che rappresentano l'ansia e la sensazione di allarme -->
+    <circle cx="60" cy="60" r="50" fill="none" stroke="#4682B4" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <circle cx="60" cy="60" r="58" fill="none" stroke="#4682B4" stroke-width="1" stroke-dasharray="2,2"/>
+  </svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100" height="100"> 
+    <!-- Cerchio esterno - più grande e in rosso per indicare restrizione --> 
+    <circle cx="60" cy="60" r="48" fill="white" stroke="#E98074" stroke-width="4"/> 
+    
+    <!-- Numero 1 - spostato leggermente a destra --> 
+    <path d="M38 42 L38 68" stroke="#4682B4" stroke-width="5" stroke-linecap="round"/> 
+    
+    <!-- Numero 8 - spostato leggermente a destra --> 
+    <path d="M55 48 C55 40 45 40 45 48 C45 56 55 56 55 48" fill="none" stroke="#4682B4" stroke-width="5" stroke-linecap="round"/> 
+    <path d="M55 62 C55 70 45 70 45 62 C45 54 55 54 55 62" fill="none" stroke="#4682B4" stroke-width="5" stroke-linecap="round"/> 
+    
+    <!-- Simbolo "+" (più) - spostato leggermente a sinistra --> 
+    <path d="M65 55 L82 55" stroke="#4682B4" stroke-width="5" stroke-linecap="round"/> <!-- linea orizzontale -->
+    <path d="M73.5 46.5 L73.5 63.5" stroke="#4682B4" stroke-width="5" stroke-linecap="round"/> <!-- linea verticale -->
+    
+    <!-- Elementi decorativi di supporto --> 
+    <circle cx="60" cy="60" r="54" fill="none" stroke="#E0E0E0" stroke-width="1" stroke-dasharray="4,2"/>
+  </svg>

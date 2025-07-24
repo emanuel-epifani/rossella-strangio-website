@@ -1,36 +1,160 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dott.ssa Rossella Strangio - Website Next.js
 
-## Getting Started
+Una versione Next.js moderna del sito web professionale per la Dott.ssa Rossella Strangio, psicologa a Torino.
 
-First, run the development server:
+## 🚀 Caratteristiche
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### SEO e Performance
+- **SEO Avanzato**: Meta tags completi, Schema.org JSON-LD, OpenGraph, Twitter Cards
+- **Core Web Vitals ottimizzati**: Next.js Image optimization, lazy loading, code splitting
+- **Sitemap dinamica** e robots.txt per motori di ricerca
+- **Structured Data** per massima visibilità su Google e AI search agents
+
+### Tecnologie Utilizzate
+- **Next.js 15** con App Router
+- **TypeScript** per type safety
+- **Tailwind CSS** per styling responsive
+- **Lucide React** per icone moderne
+- **Next SEO** per ottimizzazione avanzata
+
+### Funzionalità Principali
+- **Design Responsive** mobile-first
+- **Modal interattivi** per casi di studio dei servizi
+- **Menu mobile** con hamburger menu
+- **CTA ottimizzate** per conversioni
+- **Contatti multipli**: telefono, email, WhatsApp
+- **Prenotazione online** integrata
+
+## 📁 Struttura del Progetto
+
+```
+src/
+├── app/                 # App Router (Next.js 13+)
+│   ├── layout.tsx      # Root layout con SEO
+│   ├── page.tsx        # Homepage
+│   ├── globals.css     # Stili globali
+│   ├── sitemap.ts      # Sitemap dinamica
+│   └── robots.txt/     # Robots.txt dinamico
+├── components/          # Componenti React
+│   ├── Header.tsx      # Navigazione principale
+│   ├── Hero.tsx        # Sezione hero
+│   ├── About.tsx       # Sezione chi sono
+│   ├── Services.tsx    # Servizi con modal
+│   ├── Where.tsx       # Dove ricevo
+│   ├── Patients.tsx    # Per chi
+│   ├── Prices.tsx      # Tariffe
+│   ├── Contact.tsx     # Contatti
+│   └── Footer.tsx      # Footer
+├── data/               # Dati strutturati
+│   ├── services.ts     # Lista servizi
+│   └── modal-texts.ts  # Testi modal
+└── lib/                # Utilities
+    └── utils.ts        # Utility functions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Design System
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Colori
+- **Primary**: #4682B4 (Steel Blue) - Professionalità e fiducia
+- **Secondary**: #3CB371 (Medium Sea Green) - Crescita e benessere  
+- **Accent**: #e66657 (Coral) - Call-to-action e elementi interattivi
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Componenti
+- **shadcn/ui** ready (configurato ma non ancora utilizzato)
+- **Tailwind CSS** per styling consistente
+- **CSS custom properties** per compatibilità con design originale
 
-## Learn More
+## 🔧 Configurazioni
 
-To learn more about Next.js, take a look at the following resources:
+### Performance
+- **Image optimization** con WebP/AVIF
+- **Code splitting** automatico
+- **Lazy loading** per immagini
+- **Bundle optimization** in produzione
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### SEO
+- **Metadata API** di Next.js 13+
+- **Schema.org JSON-LD** per structured data
+- **Canonical URLs** e sitemap
+- **Meta tags ottimizzati** per social sharing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Security
+- **Security headers** configurati
+- **Content Security Policy** ready
+- **HTTPS-first** approach
 
-## Deploy on Vercel
+## 🚀 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Preparazione
+1. Configurare il dominio in `src/app/layout.tsx`
+2. Aggiornare URLs in sitemap e robots.txt  
+3. Configurare analytics (Google Analytics/Plausible)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Build
+```bash
+npm run build
+npm run start
+```
+
+### Deploy su Vercel
+```bash
+vercel --prod
+```
+
+## 📊 SEO Checklist
+
+- [x] **Title tags** ottimizzati per ogni sezione
+- [x] **Meta descriptions** descrittive e coinvolgenti  
+- [x] **Schema.org** markup per LocalBusiness
+- [x] **OpenGraph** tags per social sharing
+- [x] **JSON-LD** structured data
+- [x] **Sitemap XML** dinamica
+- [x] **Robots.txt** ottimizzato
+- [x] **Core Web Vitals** ottimizzati
+- [x] **Mobile-first** responsive design
+- [x] **Semantic HTML** markup
+- [x] **Alt text** per tutte le immagini
+- [x] **Local SEO** ottimizzato per Torino
+
+## 🔮 Miglioramenti Futuri
+
+### Quando necessario:
+- **Autenticazione**: Logto integration
+- **Form management**: React Hook Form + Zod
+- **State management**: Zustand per stato complesso  
+- **API integration**: TanStack Query per chiamate server
+- **CMS integration**: per gestione contenuti dinamici
+- **Analytics**: Google Analytics 4 o Plausible
+- **A/B Testing**: per ottimizzazione conversioni
+
+## 🛠️ Sviluppo
+
+### Installazione
+```bash
+npm install
+npm run dev
+```
+
+### Scripts disponibili
+- `npm run dev` - Development server
+- `npm run build` - Build di produzione
+- `npm run start` - Server di produzione
+- `npm run lint` - ESLint check
+
+### Convenzioni di Codice
+- **Components**: PascalCase (es. `Header.tsx`)
+- **Files**: kebab-case per cartelle
+- **Functions**: camelCase  
+- **Constants**: UPPER_SNAKE_CASE
+- **TypeScript strict mode** attivo
+
+## 📞 Contatti
+
+**Dott.ssa Rossella Strangio**
+- 📱 +39 334 307 1131
+- 📧 rossella.strangio@gmail.com  
+- 📍 Via Roma, 123 - 10100 Torino (TO)
+
+---
+
+*Sito web professionale ottimizzato per SEO e performance, sviluppato con Next.js 15 e TypeScript.*

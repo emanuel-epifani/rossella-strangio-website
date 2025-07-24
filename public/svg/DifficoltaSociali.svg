@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100" height="100" style="margin: 0 auto; display: block;">
+    <!-- Cerchio principale -->
+    <circle cx="60" cy="60" r="50" fill="white" stroke="#4682B4" stroke-width="0.5" opacity="0.8"/>
+    
+    <!-- Figure stilizzate di persone -->
+    <!-- Figura centrale (più piccola/isolata) -->
+    <circle cx="50" cy="50" r="12" fill="#E98074"/>
+    <path d="M50 62 L50 80 M40 68 L50 70 L60 68" stroke="#E98074" stroke-width="4" fill="none"/>
+    
+    <!-- Altre figure (gruppo) -->
+    <circle cx="80" cy="40" r="8" fill="#4682B4"/>
+    <path d="M80 48 L80 62 M75 52 L80 54 L85 52" stroke="#4682B4" stroke-width="3" fill="none"/>
+    
+    <circle cx="85" cy="55" r="8" fill="#4682B4"/>
+    <path d="M85 63 L85 77 M80 67 L85 69 L90 67" stroke="#4682B4" stroke-width="3" fill="none"/>
+    
+    <circle cx="70" cy="55" r="8" fill="#4682B4"/>
+    <path d="M70 63 L70 77 M65 67 L70 69 L75 67" stroke="#4682B4" stroke-width="3" fill="none"/>
+    
+    <!-- Linea tratteggiata di separazione -->
+    <path d="M60 20 L60 100" stroke="#4682B4" stroke-width="2" stroke-dasharray="5,5"/>
+    
+    <!-- Punto interrogativo sopra la figura isolata -->
+    <text x="48" y="35" font-family="Arial" font-size="18" font-weight="bold" fill="#E98074">?</text>
+  </svg>

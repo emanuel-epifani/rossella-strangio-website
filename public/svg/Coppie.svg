@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Cerchio esterno con bordo rosso - spessore aumentato come nel disegno del 18+ -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#E98074" stroke-width="8"/>
+  
+  <!-- Simbolo maschile (♂) a sinistra -->
+  <circle cx="70" cy="100" r="18" fill="none" stroke="#4682B4" stroke-width="5"/>
+  <path d="M83 87 L100 70" stroke="#4682B4" stroke-width="5"/>
+  <path d="M100 70 L100 85" stroke="#4682B4" stroke-width="5"/>
+  <path d="M100 70 L85 70" stroke="#4682B4" stroke-width="5"/>
+  
+  <!-- Simbolo femminile (♀) a destra -->
+  <circle cx="115" cy="100" r="18" fill="none" stroke="#E98074" stroke-width="5"/>
+  <path d="M115 118 L115 135" stroke="#E98074" stroke-width="5"/>
+  <path d="M105 128 L125 128" stroke="#E98074" stroke-width="5"/>
+  
+  <!-- Simbolo + a fianco del simbolo della donna (7 colori dell'arcobaleno) -->
+  <!-- Linea verticale con segmenti colorati -->
+  <path d="M150 85 L150 89" stroke="#FF0000" stroke-width="5" stroke-linecap="round"/>
+  <path d="M150 89 L150 93" stroke="#FF9900" stroke-width="5" stroke-linecap="round"/>
+  <path d="M150 93 L150 97" stroke="#FFFF00" stroke-width="5" stroke-linecap="round"/>
+  <path d="M150 97 L150 101" stroke="#00FF00" stroke-width="5" stroke-linecap="round"/>
+  <path d="M150 101 L150 105" stroke="#0099FF" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- Linea orizzontale con segmenti colorati -->
+  <path d="M140 95 L144 95" stroke="#FF0000" stroke-width="5" stroke-linecap="round"/>
+  <path d="M144 95 L148 95" stroke="#FF9900" stroke-width="5" stroke-linecap="round"/>
+  <path d="M148 95 L150 95" stroke="#FFFF00" stroke-width="5" stroke-linecap="round"/>
+  <path d="M150 95 L152 95" stroke="#00FF00" stroke-width="5" stroke-linecap="round"/>
+  <path d="M152 95 L156 95" stroke="#0099FF" stroke-width="5" stroke-linecap="round"/>
+  <path d="M156 95 L160 95" stroke="#6633FF" stroke-width="5" stroke-linecap="round"/>
+  <path d="M153 95 L157 95" stroke="#FF00FF" stroke-width="5" stroke-linecap="round"/>
+</svg>

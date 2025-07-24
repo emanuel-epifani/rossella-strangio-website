@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100" height="100" style="margin: 0 auto; display: block;">
+    <!-- Faccia dell'emoticon -->
+    <circle cx="60" cy="60" r="50" fill="white" stroke="#4682B4" stroke-width="3"/>
+    
+    <!-- Bocca preoccupata -->
+    <path d="M40 65 Q60 75 80 65" fill="none" stroke="#4682B4" stroke-width="4"/>
+    
+    <!-- Occhi -->
+    <circle cx="40" cy="45" r="6" fill="#4682B4"/>
+    <circle cx="80" cy="45" r="6" fill="#4682B4"/>
+    
+    <!-- Sopracciglia preoccupate -->
+    <path d="M30 35 L50 25" stroke="#4682B4" stroke-width="3" fill="none"/>
+    <path d="M70 25 L90 35" stroke="#4682B4" stroke-width="3" fill="none"/>
+</svg>
