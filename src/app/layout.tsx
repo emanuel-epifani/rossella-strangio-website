@@ -162,9 +162,8 @@ export default function RootLayout({
   return (
     <html lang="it">
       <head>
-        {/* Preconnect to external domains */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Meta Description - Explicit for SEO */}
+        <meta name="description" content="🔹 Psicologa specializzata a Torino. Prima seduta GRATUITA. Terapia per ansia, depressione, attacchi di panico. ✅ Online e in studio. ☎️ 334 307 1131" />
         
         {/* Favicon */}
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -182,6 +181,10 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
+        {/* Skip to content link for accessibility */}
+        <a href="#main-content" className="skip-link">
+          Vai al contenuto principale
+        </a>
         {children}
       </body>
     </html>

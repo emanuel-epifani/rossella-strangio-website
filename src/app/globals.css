@@ -70,6 +70,16 @@
     line-height: 1.6;
     background-color: var(--light-bg);
   }
+  
+  /* Focus styles for accessibility */
+  a, button, [tabindex] {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 focus:ring-offset-2;
+  }
+  
+  /* High contrast focus for better accessibility */
+  button:focus-visible, a:focus-visible {
+    @apply ring-2 ring-primary ring-offset-2;
+  }
 }
 
 /* Original design utilities */
@@ -92,7 +102,7 @@
   }
   
   .cta-button {
-    @apply bg-accent text-white px-6 py-3 rounded-full font-semibold transition-colors hover:bg-accent/90 inline-block;
+    @apply bg-accent text-white px-6 py-3 rounded-full font-semibold transition-colors hover:bg-accent/90 focus:ring-2 focus:ring-accent focus:ring-opacity-50 inline-block;
     /*@apply bg-accent text-white px-6 py-3 rounded-full font-semibold transition-colors hover:bg-accent/90 inline-block;*/
   }
   
@@ -123,4 +133,9 @@
   .box-title {
     @apply text-primary mb-4 text-xl text-center;
   }
+}
+
+/* Skip to content link for accessibility */
+.skip-link {
+  @apply absolute -top-40 left-6 bg-primary text-white px-4 py-2 rounded transition-all focus:top-6 z-50;
 }

@@ -1,4 +1,4 @@
-import { Users, Heart, Brain } from 'lucide-react'
+// Icons not used in this component, keeping it clean
 
 export default function Patients() {
   return (
@@ -42,7 +42,7 @@ export default function Patients() {
             <div className="service-content">
               <h3 className="text-2xl font-bold text-primary mb-4 text-center">Terapia di Coppia</h3>
               <p className="text-gray-700 mb-8 text-center">
-                Supporto per coppie che desiderano migliorare la comunicazione, risolvere conflitti, ritrovare l'intimità e rafforzare il legame emotivo per una relazione più sana e soddisfacente.
+                Supporto per coppie che desiderano migliorare la comunicazione, risolvere conflitti, ritrovare l&apos;intimità e rafforzare il legame emotivo per una relazione più sana e soddisfacente.
               </p>
               <div className="text-center">
                 <a href="#contact" className="cta-button">
