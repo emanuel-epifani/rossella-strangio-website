@@ -21,9 +21,9 @@ export default function Header() {
         <nav className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <h2 className="text-xl font-bold text-primary">
+            <span className="text-xl font-bold text-primary">
               Dott.ssa Rossella Strangio
-            </h2>
+            </span>
           </div>
 
           {/* Desktop Navigation */}

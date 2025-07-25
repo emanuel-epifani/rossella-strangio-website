@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
   title: 'Dott.ssa Rossella Strangio | Psicologa a Torino – Consulenze Online e In Studio',
-  description: 'Dott.ssa Rossella Strangio – Psicologa a Torino. Sedute online e in studio per adulti e coppie. Consulenza psicologica per ansia, depressione, attacchi di panico e traumi.',
-  keywords: 'psicologa torino, psicologo torino, terapia torino, ansia torino, depressione torino, terapia online torino',
+  description: '🔹 Psicologa specializzata a Torino. Prima seduta GRATUITA. Terapia per ansia, depressione, attacchi di panico. ✅ Online e in studio. ☎️ 334 307 1131',
+  keywords: 'psicologa torino, psicologo torino, terapia torino, ansia torino, depressione torino, terapia online torino, psicologa zona centro torino, prima seduta gratuita',
   authors: [{ name: 'Dott.ssa Rossella Strangio' }],
   creator: 'Dott.ssa Rossella Strangio',
   publisher: 'Dott.ssa Rossella Strangio',
@@ -16,12 +16,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  verification: {
+    google: 'google-site-verification-placeholder',
+  },
   openGraph: {
     type: 'website',
     locale: 'it_IT',
     url: 'https://rossella-strangio.it',
     title: 'Dott.ssa Rossella Strangio | Psicologa a Torino – Consulenze Online e In Studio',
-    description: 'Dott.ssa Rossella Strangio – Psicologa a Torino. Sedute online e in studio per adulti e coppie. Consulenza psicologica per ansia, depressione, attacchi di panico e traumi.',
+    description: '🔹 Psicologa specializzata a Torino. Prima seduta GRATUITA. Terapia per ansia, depressione, attacchi di panico. ✅ Online e in studio.',
     siteName: 'Dott.ssa Rossella Strangio - Psicologa',
     images: [
       {
@@ -37,7 +40,7 @@ export const metadata: Metadata = {
     site: '@rossella_strangio',
     creator: '@rossella_strangio',
     title: 'Dott.ssa Rossella Strangio | Psicologa a Torino',
-    description: 'Sedute online e in studio per adulti e coppie. Consulenza psicologica per ansia, depressione, attacchi di panico e traumi.',
+    description: 'Prima seduta GRATUITA. Terapia per ansia, depressione, attacchi di panico. Online e in studio a Torino.',
     images: ['/images/ElenaMininni.jpg'],
   },
   other: {
@@ -46,6 +49,10 @@ export const metadata: Metadata = {
     'geo.position': '45.0703;7.6869',
     'ICBM': '45.0703, 7.6869',
     'DC.title': 'Psicologa Torino - Dott.ssa Rossella Strangio',
+    'rating': '5.0',
+    'locality': 'Torino',
+    'region': 'Piemonte',
+    'country-name': 'Italia',
   },
 }
 
