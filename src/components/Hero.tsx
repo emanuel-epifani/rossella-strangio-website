@@ -5,6 +5,9 @@ export default function Hero() {
         <h1 className="text-4xl md:text-5xl font-bold mb-5 text-primary">
           Psicologa a Torino - Dott.ssa Rossella Strangio
         </h1>
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-primary">
+          Benvenuti nel mio spazio
+        </h2>
         <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8">
           Supporto psicologico professionale <strong>Online</strong> e in <strong>sede a Torino</strong>
         </p>

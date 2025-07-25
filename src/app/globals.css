@@ -93,10 +93,19 @@
   
   .cta-button {
     @apply bg-accent text-white px-6 py-3 rounded-full font-semibold transition-colors hover:bg-accent/90 inline-block;
+    /*@apply bg-accent text-white px-6 py-3 rounded-full font-semibold transition-colors hover:bg-accent/90 inline-block;*/
   }
   
   .service-card {
     @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg;
+  }
+  
+  .service-content {
+    @apply p-8;
+  }
+  
+  .service-image {
+    @apply bg-gray-50 py-8 px-6 text-center;
   }
   
   .box {

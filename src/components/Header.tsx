@@ -10,7 +10,7 @@ export default function Header() {
     { href: '#about', label: 'Chi sono' },
     { href: '#where', label: 'Dove' },
     { href: '#services', label: 'Servizi' },
-    { href: '#patients', label: 'Per chi' },
+    { href: '#patients', label: 'Pazienti' },
     { href: '#prices', label: 'Tariffe' },
     { href: '#contact', label: 'Contatti' },
   ]

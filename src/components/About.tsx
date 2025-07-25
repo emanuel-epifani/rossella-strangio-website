@@ -35,9 +35,7 @@ export default function About() {
               </p>
               <p className="text-lg leading-relaxed mb-6">
                 Insieme useremo <strong>strategie pratiche e scientificamente provate</strong> per 
-                aiutarti a ritrovare equilibrio e serenità. <strong>Non aspettare</strong> che il 
-                disagio cresca: <strong>prenota ora la tua prima seduta</strong> e inizia il percorso 
-                verso il tuo benessere.
+                aiutarti a ritrovare equilibrio e serenità.
               </p>
               <a href="#contact" className="cta-button">
                 Prenota una consulenza
