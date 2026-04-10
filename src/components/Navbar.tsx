@@ -11,7 +11,7 @@ export default function Navbar() {
   const navItems = [
     { href: '/', label: 'HOME' },
     { href: '/chi-sono', label: 'CHI SONO' },
-    { href: '/come-posso-aiutarti', label: 'COME POSSO AIUTARTI' },
+    { href: '/servizi', label: 'SERVIZI' },
     { href: '/faq', label: 'FAQ' },
     { href: '/contattami', label: 'CONTATTAMI' },
   ]
