@@ -53,9 +53,17 @@ export default function ComePossoAiutarti() {
                       )}
                     </div>
                     <h3 className="font-semibold text-foreground text-center mb-3">{service.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+                    <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line mb-4">
                       {service.fullDescription}
                     </p>
+                    <div className="mt-auto pt-4 border-t border-gray-200">
+                      <div className="text-center">
+                        <p className="text-lg font-bold text-primary">{service.price}</p>
+                        {service.priceNote && (
+                          <p className="text-xs text-muted-foreground mt-1 whitespace-pre-line">{service.priceNote}</p>
+                        )}
+                      </div>
+                    </div>
                   </div>
                 )
               })}
@@ -64,7 +72,7 @@ export default function ComePossoAiutarti() {
         </section>
 
         {/* Outro */}
-        <section className="py-8 bg-gray-50">
+        <section className="py-8 bg-white">
           <div className="container max-w-3xl text-center">
             <p className="text-muted-foreground">{serviziContent.outro}</p>
           </div>
