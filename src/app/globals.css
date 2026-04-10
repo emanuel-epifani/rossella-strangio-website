@@ -10,25 +10,22 @@
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 208 64% 50%; /* #4682B4 - Steel Blue */
+    --primary: 82 25% 48%; /* #8A9A5B - Sage Green */
     --primary-foreground: 210 40% 98%;
-    --secondary: 149 43% 51%; /* #3CB371 - Medium Sea Green */
+    --secondary: 300 20% 79%; /* #D8BFD8 - Thistle/Malva */
     --secondary-foreground: 222.2 84% 4.9%;
     --muted: 210 40% 96%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 5 79% 64%; /* #e66657 - Coral */
+    --accent: 82 15% 44%; /* #6B7B5C - Darker sage */
     --accent-foreground: 210 40% 98%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 208 64% 50%;
+    --ring: 82 25% 48%;
     --radius: 0.5rem;
     
-    /* Custom variables for the original design */
-    --primary-color: #4682B4;
-    --secondary-color: #3CB371;
-    --accent-color: #e66657;
+    /* Custom variables */
     --text-color: #333;
     --light-bg: #f9f9f9;
     --white: #fff;
@@ -42,29 +39,25 @@
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-    --primary: 208 64% 50%;
+    --primary: 82 25% 48%;
     --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 149 43% 51%;
+    --secondary: 300 20% 79%;
     --secondary-foreground: 210 40% 98%;
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-    --accent: 5 79% 64%;
+    --accent: 82 15% 44%;
     --accent-foreground: 210 40% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 208 64% 50%;
+    --ring: 82 25% 48%;
   }
 }
 
 @layer base {
-  * {
-    @apply border-gray-200;
-  }
-  
   body {
-    @apply bg-gray-50 text-gray-900;
+    @apply bg-muted text-foreground;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color);
     line-height: 1.6;
@@ -115,11 +108,11 @@
   }
   
   .service-image {
-    @apply bg-gray-50 py-8 px-6 text-center;
+    @apply bg-muted py-8 px-6 text-center;
   }
   
   .box {
-    @apply bg-gray-50 rounded-lg p-6 shadow-md flex-1 min-w-[300px] text-left;
+    @apply bg-muted rounded-lg p-6 shadow-md flex-1 min-w-[300px] text-left;
   }
   
   .box-primary {

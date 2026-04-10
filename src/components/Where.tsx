@@ -18,7 +18,7 @@ export default function Where() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-primary mb-4 text-center">Online</h3>
-              <p className="text-gray-700 mb-6 text-center">
+              <p className="text-foreground mb-6 text-center">
                 In videochiamata comodamente da casa tua. Un modo efficace per ricevere supporto psicologico professionale, senza spostamenti e con la massima privacy.
               </p>
               <ul className="space-y-3 mb-8">
@@ -52,7 +52,7 @@ export default function Where() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-primary mb-4 text-center">In sede a Torino</h3>
-              <p className="text-gray-700 mb-6 text-center">
+              <p className="text-foreground mb-6 text-center">
                 Se preferisci parlarmi dal vivo, organizzeremo un incontro nel mio studio a Torino, in un ambiente confortevole e riservato.
               </p>
               <ul className="space-y-3 mb-8">

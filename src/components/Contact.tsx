@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react'
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-muted">
       <div className="container">
         <div className="section-title">
           <h2>Contatti</h2>
@@ -26,12 +26,12 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg">Telefono</h4>
-                  <p className="text-gray-700">
+                  <p className="text-foreground">
                     <a href="tel:+393343071131" className="text-accent hover:underline font-medium">
                       +39 334 307 1131
                     </a>
                   </p>
-                  <p className="text-sm text-gray-600">Lun-Ven: 9:00-19:00 | Sab: 9:00-13:00</p>
+                  <p className="text-sm text-muted-foreground">Lun-Ven: 9:00-19:00 | Sab: 9:00-13:00</p>
                 </div>
               </div>
 
@@ -41,12 +41,12 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg">Email</h4>
-                  <p className="text-gray-700">
+                  <p className="text-foreground">
                     <a href="mailto:rossella.strangio@gmail.com" className="text-accent hover:underline font-medium">
                       rossella.strangio@gmail.com
                     </a>
                   </p>
-                  <p className="text-sm text-gray-600">Risposta entro 24h</p>
+                  <p className="text-sm text-muted-foreground">Risposta entro 24h</p>
                 </div>
               </div>
 
@@ -56,11 +56,11 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg">Studio</h4>
-                  <p className="text-gray-700">
+                  <p className="text-foreground">
                     Via Roma, 123<br />
                     10100 Torino (TO)
                   </p>
-                  <p className="text-sm text-gray-600">Facilmente raggiungibile con mezzi pubblici</p>
+                  <p className="text-sm text-muted-foreground">Facilmente raggiungibile con mezzi pubblici</p>
                 </div>
               </div>
             </div>

@@ -32,7 +32,7 @@ export default function Header() {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-gray-700 hover:text-primary transition-colors font-medium"
+className="text-foreground hover:text-primary transition-colors font-medium"
               >
                 {item.label}
               </a>
@@ -51,13 +51,13 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden border-t border-gray-200 py-4">
+          <div className="md:hidden border-t border py-4">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-gray-700 hover:text-primary transition-colors font-medium"
+  className="text-foreground hover:text-primary transition-colors font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}

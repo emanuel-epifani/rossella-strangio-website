@@ -16,7 +16,7 @@ export default function Prices() {
             </div>
             <h3 className="text-2xl font-bold text-primary mb-4">Terapia Individuale</h3>
             <div className="text-4xl font-bold text-primary mb-2">€50</div>
-            <p className="text-gray-600 mb-6">per seduta</p>
+            <p className="text-muted-foreground mb-6">per seduta</p>
             <ul className="space-y-3 text-left mb-8">
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
@@ -43,7 +43,7 @@ export default function Prices() {
             </div>
             <h3 className="text-2xl font-bold text-secondary mb-4">Terapia di Coppia</h3>
             <div className="text-4xl font-bold text-secondary mb-2">€60</div>
-            <p className="text-gray-600 mb-6">per seduta</p>
+            <p className="text-muted-foreground mb-6">per seduta</p>
             <ul className="space-y-3 text-left mb-8">
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>

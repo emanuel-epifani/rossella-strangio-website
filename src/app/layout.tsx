@@ -172,7 +172,7 @@ export default function RootLayout({
         <link rel="preload" href="/images/ElenaMininni.jpg" as="image" />
         
         {/* Theme color */}
-        <meta name="theme-color" content="#4682B4" />
+        <meta name="theme-color" content="#8A9A5B" />
         
         {/* Schema.org JSON-LD */}
         <script

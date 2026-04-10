@@ -18,7 +18,7 @@ export default function Patients() {
             </div>
             <div className="service-content">
               <h3 className="text-2xl font-bold text-primary mb-4 text-center">Terapia per Adulti</h3>
-              <p className="text-gray-700 mb-8 text-center">
+              <p className="text-foreground mb-8 text-center">
                 Percorsi individuali per affrontare stress, ansia, depressione, difficoltà relazionali, problemi legati al lavoro, e per promuovere la crescita personale e il benessere psicologico.
               </p>
               <div className="text-center">
@@ -41,7 +41,7 @@ export default function Patients() {
             </div>
             <div className="service-content">
               <h3 className="text-2xl font-bold text-primary mb-4 text-center">Terapia di Coppia</h3>
-              <p className="text-gray-700 mb-8 text-center">
+              <p className="text-foreground mb-8 text-center">
                 Supporto per coppie che desiderano migliorare la comunicazione, risolvere conflitti, ritrovare l&apos;intimità e rafforzare il legame emotivo per una relazione più sana e soddisfacente.
               </p>
               <div className="text-center">
