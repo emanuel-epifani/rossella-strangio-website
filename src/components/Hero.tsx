@@ -7,7 +7,7 @@ export default function Hero() {
         <Image 
           src="/images/logo.jpg"
           alt="Logo Dott.ssa Rossella Strangio"
-          width={800}
+          width={400}
           height={400}
           priority
         />

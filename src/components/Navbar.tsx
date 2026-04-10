@@ -1,10 +1,12 @@
 'use client'
 
 import { useState } from 'react'
+import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
 
   const navItems = [
     { href: '/', label: 'HOME' },
@@ -24,7 +26,11 @@ export default function Navbar() {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+                className={`text-sm font-medium transition-colors ${
+                  pathname === item.href
+                    ? 'text-primary font-semibold'
+                    : 'text-foreground hover:text-primary'
+                }`}
               >
                 {item.label}
               </a>
@@ -49,7 +55,11 @@ export default function Navbar() {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-foreground hover:text-primary transition-colors font-medium"
+                  className={`transition-colors font-medium ${
+                    pathname === item.href
+                      ? 'text-primary font-semibold'
+                      : 'text-foreground hover:text-primary'
+                  }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}
