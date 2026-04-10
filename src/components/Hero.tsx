@@ -1,22 +1,16 @@
+import Image from 'next/image'
+
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-b from-primary/10 to-primary/20 pt-40 pb-20 text-center">
-      <div className="container">
-        <h1 className="text-4xl md:text-5xl font-bold mb-5 text-primary">
-          Psicologa a Torino - Dott.ssa Rossella Strangio
-        </h1>
-        <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-primary">
-          Benvenuti nel mio spazio
-        </h2>
-        <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8">
-          Supporto psicologico professionale <strong>Online</strong> e in <strong>sede a Torino</strong>
-        </p>
-        <a 
-          href="#contact" 
-          className="cta-button"
-        >
-          Richiedi una prima seduta
-        </a>
+    <section className="bg-white pt-5 pb-5 text-center">
+      <div className="container flex justify-center">
+        <Image 
+          src="/images/logo.jpg"
+          alt="Logo Dott.ssa Rossella Strangio"
+          width={800}
+          height={400}
+          priority
+        />
       </div>
     </section>
   )

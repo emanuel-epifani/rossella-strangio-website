@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: 'Dott.ssa Rossella Strangio - Psicologa',
     images: [
       {
-        url: '/images/ElenaMininni.jpg',
+        url: '/images/chi-sono.PNG',
         width: 1200,
         height: 630,
         alt: 'Dott.ssa Rossella Strangio - Psicologa a Torino',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     creator: '@rossella_strangio',
     title: 'Dott.ssa Rossella Strangio | Psicologa a Torino',
     description: 'Prima seduta GRATUITA. Terapia per ansia, depressione, attacchi di panico. Online e in studio a Torino.',
-    images: ['/images/ElenaMininni.jpg'],
+    images: ['/images/chi-sono.PNG'],
   },
   other: {
     'geo.region': 'IT-TO',
@@ -61,7 +61,7 @@ const structuredData = {
   "@type": ["MedicalBusiness", "LocalBusiness", "ProfessionalService"],
   "name": "Dott.ssa Rossella Strangio - Psicologa",
   "alternateName": "Rossella Strangio Psicologa Torino",
-  "image": "/images/ElenaMininni.jpg",
+  "image": "/images/chi-sono.PNG",
   "url": "https://rossella-strangio.it",
   "telephone": "+393343071131",
   "email": "rossella.strangio@gmail.com",
@@ -169,7 +169,7 @@ export default function RootLayout({
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         
         {/* Preload critical resources */}
-        <link rel="preload" href="/images/ElenaMininni.jpg" as="image" />
+        <link rel="preload" href="/images/chi-sono.PNG" as="image" />
         
         {/* Theme color */}
         <meta name="theme-color" content="#8A9A5B" />

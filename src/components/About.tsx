@@ -14,7 +14,7 @@ export default function About() {
           <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16 mb-12">
             <figure className="flex-1 lg:max-w-sm">
               <Image
-                src="/images/ElenaMininni.jpg"
+                src="/images/chi-sono.PNG"
                 alt="Dott.ssa Rossella Strangio, psicologa specializzata in terapia per ansia e depressione nel suo studio professionale a Torino"
                 width={300}
                 height={300}
