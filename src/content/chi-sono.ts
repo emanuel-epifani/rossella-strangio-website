@@ -1,73 +1,13 @@
 export const chiSonoContent = {
-  title: "Chi sono",
-  intro: {
-    role: "Psicologa Psicoterapeuta",
-    specialization: "Orientamento cognitivo-comportamentale",
-    expertise: "Esperta in neuropsicologia clinica",
-    registration: {
-      order: "Ordine degli Psicologi del Piemonte",
-      number: "n. 9144"
-    }
-  },
-  education: [
-    {
-      year: "2015",
-      degree: "Laurea Triennale",
-      university: "Università della Valle d'Aosta",
-      field: "Psicologia"
-    },
-    {
-      year: "2017",
-      degree: "Laurea Magistrale",
-      university: "Università di Trieste",
-      field: "Psicologia Clinica e Neuropsicologia"
-    },
-    {
-      year: "Post-laurea",
-      degree: "Master in Neuropsicologia Clinica dell'Adulto e dell'Anziano",
-      details: "Collaborazione con Centro Riba – Istituto Diagnostico di Torino",
-      activities: [
-        "Valutazioni cognitive",
-        "Interventi di riabilitazione cognitiva in adulti con esiti di ictus",
-        "Patologie neurodegenerative",
-        "Quadri dementigeni nelle fasi iniziali"
-      ]
-    },
-    {
-      year: "Specializzazione",
-      degree: "Psicoterapia Cognitivo-Comportamentale",
-      institution: "Scuola Watson di Torino",
-      details: "Formazione clinica presso Ospedale San Luigi Gonzaga di Orbassano",
-      activities: [
-        "Ambulatori di psichiatria",
-        "Disturbi d'ansia",
-        "Disturbi dell'umore",
-        "Disturbo ossessivo-compulsivo",
-        "Disturbo bipolare"
-      ]
-    }
-  ],
-  currentWork: {
-    since: "2021",
-    location: "RSA",
-    activities: [
-      "Supporto ai caregiver",
-      "Valutazioni cognitive",
-      "Interventi di stimolazione e riabilitazione cognitiva",
-      "Formazione del personale sanitario"
-    ]
-  },
-  approach: {
-    target: [
-      "Adulti",
-      "Coppie",
-      "Persone anziane con decadimento cognitivo"
-    ],
-    methodology: [
-      "Intervento psicoterapeutico",
-      "Strumenti di valutazione neuropsicologica",
-      "Percorsi di riabilitazione cognitiva"
-    ],
-    philosophy: "Adattamento del trattamento alle specifiche esigenze della persona e del contesto di vita"
-  }
+  title: "CHI SONO",
+  subtitle: "Psicologa Psicoterapeuta\nEsperta in neuropsicologia clinica",
+  description: `Sono una psicologa psicoterapeuta ad orientamento cognitivo-comportamentale ed esperta in neuropsicologia clinica, iscritta all'Ordine degli Psicologi del Piemonte (n. 9144).
+
+Ho conseguito la **Laurea Triennale in Sciene e Tecniche Psicologiche** presso l'Università della Valle d'Aosta (2015) e la **Laurea Magistrale in Psicologia Clinica e Neuropsicologia** presso l'Università di Trieste (2017). Successivamente ho approfondito la mia formazione con un **Master in Neuropsicologia Clinica dell'Adulto e dell'Anziano**, durante il quale ho collaborato con il Centro Riba – Istituto Diagnostico di Torino, occupandomi di valutazioni cognitive e interventi di riabilitazione cognitiva in adulti con esiti di ictus, patologie neurodegenerative e quadri dementigeni nelle fasi iniziali.
+
+Successivamente mi sono **Specializzata in Psicoterapia Cognitivo-Comportamentale** presso la Scuola Watson di Torino, svolgendo parte della formazione clinica presso l'Ospedale San Luigi Gonzaga di Orbassano, negli ambulatori di psichiatria. In questo contesto ho lavorato con pazienti adulti con disturbi d'ansia, disturbi dell'umore, disturbo ossessivo-compulsivo e disturbo bipolare.
+
+Dal 2021 **lavoro anche presso una Residenza Sanitaria Assistenziale (RSA)**, dove mi occupo di supporto ai caregiver, valutazioni cognitive, interventi di stimolazione e riabilitazione cognitiva e formazione del personale sanitario.
+
+Nel mio lavoro mi rivolgo ad **adulti, coppie e persone anziane** con decadimento cognitivo. Integro l'intervento psicoterapeutico con strumenti di valutazione neuropsicologica e percorsi di riabilitazione cognitiva, adattando il trattamento alle specifiche esigenze della persona e del contesto di vita.`
 }
