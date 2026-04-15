@@ -5,9 +5,7 @@ export default function About() {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container">
-        <div className="section-title">
-          <h2>Psicologa</h2>
-        </div>
+
         
         <article className="flex flex-col items-center gap-8 text-center">
           {/* Profile and intro */}
