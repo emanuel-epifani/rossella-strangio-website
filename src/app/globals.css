@@ -63,16 +63,6 @@
     line-height: 1.6;
     background-color: var(--light-bg);
   }
-  
-  /* Focus styles for accessibility */
-  a, button, [tabindex] {
-    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 focus:ring-offset-2;
-  }
-  
-  /* High contrast focus for better accessibility */
-  button:focus-visible, a:focus-visible {
-    @apply ring-2 ring-primary ring-offset-2;
-  }
 }
 
 /* Original design utilities */

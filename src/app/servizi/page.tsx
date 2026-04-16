@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { serviziContent } from '@/content/servizi'
-import { Brain, HeartPulse, Users, GraduationCap, UserCheck } from 'lucide-react'
+import { Brain, HeartPulse, Users, GraduationCap, UserCheck, Clock, Video, Phone, FileText, Calendar } from 'lucide-react'
 import Image from 'next/image'
 
 export default function ComePossoAiutarti() {
@@ -26,7 +26,7 @@ export default function ComePossoAiutarti() {
         </section>
 
         {/* Card con icona e descrizione */}
-        <section className="py-16 bg-white">
+        <section className="pt-20 bg-white">
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {serviziContent.services.map((service) => {
@@ -71,10 +71,31 @@ export default function ComePossoAiutarti() {
           </div>
         </section>
 
-        {/* Outro */}
-        <section className="py-8 bg-white">
-          <div className="container max-w-3xl text-center">
-            <p className="text-muted-foreground">{serviziContent.outro}</p>
+        {/* Come funziona */}
+        <section className="py-20 bg-white">
+          <div className="container">
+            <div className="section-title">
+              <h2>{serviziContent.howItWorks.title}</h2>
+            </div>
+            <div className="max-w-3xl mx-auto space-y-8">
+              {serviziContent.howItWorks.items.map((item, index) => {
+                const iconMap = [Calendar, Clock, Video, FileText, Phone]
+                const Icon = iconMap[index % iconMap.length]
+                return (
+                  <div key={index} className="flex gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                        <Icon className="w-6 h-6 text-primary" />
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-semibold text-xl mb-2">{item.title}</h3>
+                      <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
           </div>
         </section>
       </main>

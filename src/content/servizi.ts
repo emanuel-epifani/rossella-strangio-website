@@ -1,6 +1,31 @@
 export const serviziContent = {
   title: "SERVIZI",
   intro: "Offro percorsi di psicoterapia e interventi neuropsicologici rivolti ad adulti, coppie e persone anziane, costruiti in modo personalizzato sulla base delle difficoltà specifiche di ciascuna persona.",
+  howItWorks: {
+    title: "Come funziona",
+    items: [
+      {
+        title: "Primo colloquio",
+        description: "Il primo incontro è uno spazio di conoscenza reciproca, in cui approfondiamo la tua richiesta e definiamo insieme gli obiettivi del percorso. Serve a capire come posso aiutarti e quale tipo di intervento è più adatto alla tua situazione."
+      },
+      {
+        title: "Struttura degli incontri",
+        description: "Le sedute hanno una durata di circa 60 minuti e si svolgono con cadenza settimanale o concordata in base alle esigenze. Il percorso viene costruito in modo personalizzato e può essere adattato nel tempo."
+      },
+      {
+        title: "Modalità",
+        description: "È possibile svolgere gli incontri in presenza oppure online, in base alle preferenze e alle necessità."
+      },
+      {
+        title: "Percorsi neuropsicologici",
+        description: "Per le valutazioni cognitive e gli interventi di stimolazione o riabilitazione cognitiva, il percorso viene strutturato in modo specifico, con una prima fase di assessment seguita da un intervento mirato."
+      },
+      {
+        title: "Prenotazione",
+        description: "Puoi prenotare un primo colloquio contattandomi tramite telefono, email o WhatsApp."
+      }
+    ]
+  },
   services: [
     {
       id: 1,
