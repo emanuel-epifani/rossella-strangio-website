@@ -13,7 +13,7 @@ export default function Navbar() {
     { href: '/chi-sono', label: 'CHI SONO' },
     { href: '/servizi', label: 'SERVIZI' },
     { href: '/faq', label: 'FAQ' },
-    { href: '/contattami', label: 'CONTATTAMI' },
+    { href: '/contattami', label: 'CONTATTI' },
   ]
 
   return (

@@ -1,4 +1,6 @@
-import { Phone, Mail, MapPin, ExternalLink } from 'lucide-react'
+import { Phone, Mail, MapPin } from 'lucide-react'
+import Icon from 'react-simple-icons'
+import Link from 'next/link'
 
 export default function Footer() {
 
@@ -32,6 +34,28 @@ export default function Footer() {
                   Via Roma, 123 - 10100 Torino (TO)
                 </a>
               </div>
+              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://www.instagram.com/la_psicoross/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:text-white transition-colors"
+                >
+                  <Icon name="instagram" className="w-5 h-5" />
+                </a>
+              </div>
+              <div className="flex items-center gap-5">
+                <a
+                  href="https://www.linkedin.com/in/rossella-strangio-7b2b29320/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:text-white transition-colors"
+                >
+                  <Icon name="linkedin" className="w-5 h-5" />
+                </a>
+              </div>
+              </div>
             </div>
           </div>
 
@@ -39,29 +63,29 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Link Rapidi</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="text-muted-foreground hover:text-accent transition-colors">
+                <Link href="/" className="text-muted-foreground hover:text-accent transition-colors">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/chi-sono" className="text-muted-foreground hover:text-accent transition-colors">
+                <Link href="/chi-sono" className="text-muted-foreground hover:text-accent transition-colors">
                   Chi sono
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/servizi" className="text-muted-foreground hover:text-accent transition-colors">
+                <Link href="/servizi" className="text-muted-foreground hover:text-accent transition-colors">
                   Servizi
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/faq" className="text-muted-foreground hover:text-accent transition-colors">
+                <Link href="/faq" className="text-muted-foreground hover:text-accent transition-colors">
                   FAQ
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contattami" className="text-muted-foreground hover:text-accent transition-colors">
+                <Link href="/contattami" className="text-muted-foreground hover:text-accent transition-colors">
                   Contattami
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
