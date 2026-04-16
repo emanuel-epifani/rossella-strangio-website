@@ -22,23 +22,12 @@ export default function Hero() {
             <h1 className="text-4xl md:text-5xl font-bold text-primary-800 mb-4 ">
               Dott.ssa Rossella Strangio
             </h1>
-            <h2 className="text-xl md:text-2xl text-gray-700 mb-6">
-              <span className="underline decoration-2 decoration-primary-500">Psicologa</span> Psicoterapeuta ad orientamento Cognitivo Comportamentale
+            <h2 className="text-xl md:text-2xl text-gray-700 mb-2">
+              Psicologa Psicoterapeuta ad orientamento <span className="underline decoration-2 decoration-primary-500">Cognitivo Comportamentale</span>
             </h2>
-            <p className="text-lg md:text-xl text-gray-600">
-              Sostegno Psicologico a <span className="bg-yellow-200 px-1 rounded">Torino e Online</span>
+            <p className="text-lg md:text-xl text-gray-600 mb-4">
+              Sostegno Psicologico a <span className="underline decoration-2 decoration-primary-500">TORINO e ONLINE</span>
             </p>
-          </div>
-          {/*Horizontal logo hero*/}
-          <div className="flex justify-end">
-            <Image
-                src="/images/img_1.png"
-                alt="Dott.ssa Rossella Strangio"
-                width={200}
-                height={200}
-                priority
-                className="object-contain h-auto"
-            />
           </div>
         </div>
 

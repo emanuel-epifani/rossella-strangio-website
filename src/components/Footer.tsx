@@ -1,6 +1,7 @@
 import { Phone, Mail, MapPin } from 'lucide-react'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
-import Icon from 'react-simple-icons'
+import Icon from "react-simple-icons"
 import Link from 'next/link'
 
 export default function Footer() {

@@ -6,6 +6,8 @@ import Footer from '@/components/Footer'
 import { faqContent } from '@/content/faq'
 import { ChevronDown, ChevronUp } from 'lucide-react'
 
+export const dynamic = 'force-static'
+
 export default function FAQ() {
   const [openItems, setOpenItems] = useState<number[]>([])
 

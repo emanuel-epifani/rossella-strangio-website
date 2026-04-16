@@ -4,6 +4,8 @@ import { serviziContent } from '@/content/servizi'
 import { Brain, HeartPulse, Users, GraduationCap, UserCheck, Clock, Video, Phone, FileText, Calendar } from 'lucide-react'
 import Image from 'next/image'
 
+export const dynamic = 'force-static'
+
 export default function ComePossoAiutarti() {
   const icons = {
     1: Brain,

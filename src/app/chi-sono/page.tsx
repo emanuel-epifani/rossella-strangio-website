@@ -8,6 +8,8 @@ function formatBoldText(text: string) {
   return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
 }
 
+export const dynamic = 'force-static'
+
 export default function ChiSono() {
   return (
     <>

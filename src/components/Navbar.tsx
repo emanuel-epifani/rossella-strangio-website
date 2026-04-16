@@ -18,18 +18,18 @@ export default function Navbar() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm py-4">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md py-6">
       <div className="container">
         <nav className="flex items-center justify-center">
           {/* Desktop Navigation - Centered */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-10">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-sm font-medium transition-colors ${
+                className={`text-base font-medium transition-all ${
                   pathname === item.href
-                    ? 'text-primary font-semibold'
+                    ? 'text-primary'
                     : 'text-foreground hover:text-primary'
                 }`}
               >
@@ -50,8 +50,8 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border py-4">
-            <div className="flex flex-col space-y-4">
+          <div className="md:hidden border-t py-6">
+            <div className="flex flex-col space-y-5">
               {navItems.map((item) => (
                 <Link
                   key={item.href}

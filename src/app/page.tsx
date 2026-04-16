@@ -2,10 +2,11 @@ import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import About from '@/components/About'
 import Where from '@/components/Where'
-import Services from '@/components/Services'
 import Patients from '@/components/Patients'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+
+export const dynamic = 'force-static'
 
 export default function Home() {
   return (
@@ -14,12 +15,12 @@ export default function Home() {
         <Hero />
         <Navbar />
         <About />
-        <Where />
-        <Services />
         <Patients />
+        <Where />
         <Contact />
+        <Footer />
+
       </main>
-      <Footer />
     </>
   )
 }

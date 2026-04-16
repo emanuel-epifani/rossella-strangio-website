@@ -1,57 +1,54 @@
-// Icons not used in this component, keeping it clean
+import { User, Users, Brain } from 'lucide-react'
+import Link from "next/link";
 
 export default function Patients() {
   return (
-    <section id="patients" className="py-20 bg-white">
-      <div className="container">
+    <section id="patients" className="py-20 bg-muted">
+      <div className="container text-center">
         <div className="section-title">
-          <h2>Chi sono i miei pazienti</h2>
+          <h2>A chi mi rivolgo</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Terapia per Adulti */}
-          <div className="service-card">
-            <div className="service-image">
-              <div className="w-24 h-24 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-white font-bold text-xl">18+</span>
-              </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 ">
+          {/* Adulti */}
+          <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <User className="w-8 h-8 text-primary" />
             </div>
-            <div className="service-content">
-              <h3 className="text-2xl font-bold text-primary mb-4 text-center">Terapia per Adulti</h3>
-              <p className="text-foreground mb-8 text-center">
-                Percorsi individuali per affrontare stress, ansia, depressione, difficoltà relazionali, problemi legati al lavoro, e per promuovere la crescita personale e il benessere psicologico.
-              </p>
-              <div className="text-center">
-                <a href="#contact" className="cta-button">
-                  Contattami
-                </a>
-              </div>
-            </div>
+            <h3 className="text-xl font-bold text-primary mb-4">Adulti</h3>
+            <p className="text-foreground leading-relaxed">
+              Percorsi individuali per affrontare ansia, depressione, disturbi dell'umore, pensieri ossessivi e difficoltà emotive.
+            </p>
           </div>
 
-          {/* Terapia di Coppia */}
-          <div className="service-card">
-            <div className="service-image">
-              <div className="w-24 h-24 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
-                <div className="flex items-center gap-3">
-                  <span className="text-white text-3xl font-bold">♂</span>
-                  <span className="text-white text-3xl font-bold">♀</span>
-                </div>
-              </div>
+          {/* Coppie */}
+          <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Users className="w-8 h-8 text-primary" />
             </div>
-            <div className="service-content">
-              <h3 className="text-2xl font-bold text-primary mb-4 text-center">Terapia di Coppia</h3>
-              <p className="text-foreground mb-8 text-center">
-                Supporto per coppie che desiderano migliorare la comunicazione, risolvere conflitti, ritrovare l&apos;intimità e rafforzare il legame emotivo per una relazione più sana e soddisfacente.
-              </p>
-              <div className="text-center">
-                <a href="#contact" className="cta-button">
-                  Contattami
-                </a>
-              </div>
+            <h3 className="text-xl font-bold text-primary mb-4">Coppie</h3>
+            <p className="text-foreground leading-relaxed">
+              Supporto per coppie che affrontano difficoltà comunicative, conflitti ricorrenti o momenti di crisi relazionale.
+            </p>
+          </div>
+
+          {/* Anziani/Neuropsicologia */}
+          <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Brain className="w-8 h-8 text-primary" />
             </div>
+            <h3 className="text-xl font-bold text-primary mb-4">Persone anziane</h3>
+            <p className="text-foreground leading-relaxed">
+              Valutazioni cognitive e interventi di stimolazione per difficoltà cognitive, anche in seguito a ictus o patologie neurodegenerative.
+            </p>
           </div>
         </div>
+        <Link
+            href="/servizi"
+            className="inline-block text-primary hover:text-primary/80 font-medium underline underline-offset-4 transition-colors"
+        >
+          Scopri di più sui miei servizi
+        </Link>
       </div>
     </section>
   )
