@@ -3,7 +3,7 @@ import { CheckCircle } from 'lucide-react'
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="pt-10 bg-white">
       <div className="container">
 
         
@@ -35,49 +35,7 @@ export default function About() {
                 Insieme useremo <strong>strategie pratiche e scientificamente provate</strong> per 
                 aiutarti a ritrovare equilibrio e serenità.
               </p>
-              <a href="#contact" className="cta-button">
-                Prenota una consulenza
-              </a>
             </div>
-          </div>
-
-          {/* Credentials and approach */}
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 w-full">
-            <aside className="box box-secondary">
-              <h4 className="box-title">Formazione e Qualifiche</h4>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-secondary mt-1 flex-shrink-0" size={18} />
-                  <span><strong>Laurea Magistrale</strong> in Psicologia Clinica</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-secondary mt-1 flex-shrink-0" size={18} />
-                  <span><strong>Iscritta all&apos;Ordine degli Psicologi</strong> del Piemonte n° 10268</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-secondary mt-1 flex-shrink-0" size={18} />
-                  <span><strong>Formazione continua</strong> in protocolli evidence-based</span>
-                </li>
-              </ul>
-            </aside>
-
-            <aside className="box box-primary">
-              <h4 className="box-title">Il mio approccio</h4>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-primary mt-1 flex-shrink-0" size={18} />
-                  <span><strong>Focalizzato sui risultati</strong> con strategie pratiche e concrete</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-primary mt-1 flex-shrink-0" size={18} />
-                  <span><strong>Ambiente sicuro e non giudicante</strong> dove esprimere liberamente emozioni e pensieri</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-primary mt-1 flex-shrink-0" size={18} />
-                  <span><strong>Percorsi personalizzati</strong> in base alle esigenze specifiche di ogni persona</span>
-                </li>
-              </ul>
-            </aside>
           </div>
         </article>
       </div>

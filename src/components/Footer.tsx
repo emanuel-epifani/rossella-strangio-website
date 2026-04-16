@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from 'lucide-react'
+// @ts-expect-error
 import Icon from 'react-simple-icons'
 import Link from 'next/link'
 

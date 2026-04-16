@@ -2,7 +2,7 @@ import { Check } from 'lucide-react'
 
 export default function Where() {
   return (
-    <section id="where" className="py-20 bg-white">
+    <section id="where" className="pt-10 bg-white">
       <div className="container">
         <div className="section-title">
           <h2>Dove ricevo</h2>
@@ -69,11 +69,6 @@ export default function Where() {
                   <span>Massima privacy e riservatezza</span>
                 </li>
               </ul>
-              <div className="text-center">
-                <a href="#contact" className="cta-button">
-                  Contattami
-                </a>
-              </div>
             </div>
           </div>
         </div>

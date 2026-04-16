@@ -1,6 +1,6 @@
 export const chiSonoContent = {
   title: "CHI SONO",
-  subtitle: "Psicologa Psicoterapeuta\nEsperta in neuropsicologia clinica",
+  subtitle: "Psicologa Psicoterapeuta - Esperta in neuropsicologia clinica",
   description: `Sono una psicologa psicoterapeuta ad orientamento cognitivo-comportamentale ed esperta in neuropsicologia clinica, iscritta all'Ordine degli Psicologi del Piemonte (n. 9144).
 
 Ho conseguito la **Laurea Triennale in Sciene e Tecniche Psicologiche** presso l'Università della Valle d'Aosta (2015) e la **Laurea Magistrale in Psicologia Clinica e Neuropsicologia** presso l'Università di Trieste (2017). Successivamente ho approfondito la mia formazione con un **Master in Neuropsicologia Clinica dell'Adulto e dell'Anziano**, durante il quale ho collaborato con il Centro Riba – Istituto Diagnostico di Torino, occupandomi di valutazioni cognitive e interventi di riabilitazione cognitiva in adulti con esiti di ictus, patologie neurodegenerative e quadri dementigeni nelle fasi iniziali.

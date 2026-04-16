@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
+import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
 
 export default function Navbar() {
@@ -23,7 +24,7 @@ export default function Navbar() {
           {/* Desktop Navigation - Centered */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 className={`text-sm font-medium transition-colors ${
@@ -33,7 +34,7 @@ export default function Navbar() {
                 }`}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -52,7 +53,7 @@ export default function Navbar() {
           <div className="md:hidden border-t border py-4">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.href}
                   href={item.href}
                   className={`transition-colors font-medium ${
@@ -63,7 +64,7 @@ export default function Navbar() {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
