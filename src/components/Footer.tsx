@@ -28,12 +28,12 @@ export default function Footer() {
               <div className="flex items-center gap-3">
                 <MapPin size={18} className="text-primary-foreground" />
                 <a 
-                  href="https://maps.google.com/?q=Via+Roma,+123+-+10100+Torino+(TO)" 
+                  href="https://maps.google.com/?q=Via+Vagnone+2,+Torino" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-primary-foreground/90 hover:text-primary-foreground transition-colors"
                 >
-                  Via Roma, 123 - 10100 Torino (TO)
+                  Via Vagnone 2, Torino
                 </a>
               </div>
               <div className="flex items-center gap-4 pt-2">

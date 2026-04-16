@@ -70,12 +70,12 @@ export default function Contattami() {
                   <h3 className="font-semibold text-xl">In Presenza</h3>
                 </div>
                 <p className="text-foreground mb-4">
-                  <strong>Studio:</strong> Via Roma 123 - 10100 Torino (TO)<br />
+                  <strong>Studio:</strong> Via Vagnone 2, Torino<br />
                   <strong>Orari:</strong> Lunedì: 14:0 - 20:00<br />
                 </p>
                 <div className="relative mb-4">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.123456789!2d7.681234567!3d45.067890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDA0JzA0LjQiTiA3wrA0MCczOS4yIkU!5e0!3m2!1sit!2sit!4v1234567890"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.678901234!2d7.656789012!3d45.078901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47791f3b0e0e0e0f%3A0x0!2sVia+Vagnone+2%2C+Torino!5e0!3m2!1sit!2sit!4v1234567890"
                     width="100%"
                     height="200"
                     style={{ border: 0 }}
@@ -85,7 +85,7 @@ export default function Contattami() {
                     className="rounded-lg"
                   />
                   <a
-                    href="https://www.google.com/maps/dir/?api=1&destination=Via+Roma+123+10100+Torino+TO"
+                    href="https://www.google.com/maps/dir/?api=1&destination=Via+Vagnone+2+Torino"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="absolute inset-0 flex items-center justify-center bg-transparent hover:bg-black/10 transition-colors rounded-lg"
