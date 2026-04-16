@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import { serviziContent } from '@/content/servizi'
+import { serviziContent } from '@/content/text'
 import { Brain, HeartPulse, Users, GraduationCap, UserCheck, Clock, Video, Phone, FileText, Calendar } from 'lucide-react'
 import Image from 'next/image'
 

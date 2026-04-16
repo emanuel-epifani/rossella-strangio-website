@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { Phone, MessageCircle, Mail, MapPin, Clock } from 'lucide-react'
+import { contattamiContent } from '@/content/text'
 
 export const dynamic = 'force-static'
 
@@ -11,11 +12,9 @@ export default function Contattami() {
       <main className="min-h-screen">
         <section className="py-10 bg-primary">
           <div className="container">
-            <h1 className="text-4xl font-bold text-white mb-6">Contattami</h1>
+            <h1 className="text-4xl font-bold text-white mb-6">{contattamiContent.title}</h1>
             <p className="text-lg text-white ">
-              Sono disponibile per ricevimenti sia online che in presenza. 
-              Puoi contattarmi tramite telefono, WhatsApp o email per fissare un appuntamento 
-              o per qualsiasi informazione. Sarò felice di rispondere alle tue esigenze.
+              {contattamiContent.subtitle}
             </p>
           </div>
         </section>
@@ -25,26 +24,22 @@ export default function Contattami() {
           <div className="container">
             <h2 className="text-2xl font-bold text-primary mb-8">Contatti Diretti</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Telefono */}
-              <a href="tel:+393343071131" className="bg-white p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-lg hover:border-gray-300 transition-all text-center">
-                <Phone size={32} className="text-primary mb-4 mx-auto" />
-                <h3 className="font-semibold text-lg mb-2">Telefono</h3>
-                <p className="text-foreground">+39 334 307 1131</p>
-              </a>
-
-              {/* WhatsApp */}
-              <a href="https://wa.me/393343071131" target="_blank" rel="noopener noreferrer" className="bg-white p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-lg hover:border-gray-300 transition-all text-center">
-                <MessageCircle size={32} className="text-primary mb-4 mx-auto" />
-                <h3 className="font-semibold text-lg mb-2">WhatsApp</h3>
-                <p className="text-foreground">+39 334 307 1131</p>
-              </a>
-
-              {/* Email */}
-              <a href="mailto:rossella.strangio@gmail.com" className="bg-white p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-lg hover:border-gray-300 transition-all text-center">
-                <Mail size={32} className="text-primary mb-4 mx-auto" />
-                <h3 className="font-semibold text-lg mb-2">Email</h3>
-                <p className="text-foreground">rossella.strangio@gmail.com</p>
-              </a>
+              {contattamiContent.contactMethods.map((method) => {
+                const IconComponent = method.icon === 'Phone' ? Phone : method.icon === 'MessageCircle' ? MessageCircle : Mail
+                return (
+                  <a
+                    key={method.id}
+                    href={method.link}
+                    target={method.icon === 'MessageCircle' ? '_blank' : undefined}
+                    rel={method.icon === 'MessageCircle' ? 'noopener noreferrer' : undefined}
+                    className="bg-white p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-lg hover:border-gray-300 transition-all text-center"
+                  >
+                    <IconComponent size={32} className="text-primary mb-4 mx-auto" />
+                    <h3 className="font-semibold text-lg mb-2">{method.title}</h3>
+                    <p className="text-foreground">{method.contact}</p>
+                  </a>
+                )
+              })}
             </div>
           </div>
         </section>

@@ -1,4 +1,4 @@
-import { serviziContent } from '@/content/servizi'
+import { serviziContent } from '@/content/text'
 import { Brain, HeartPulse, Users, GraduationCap, UserCheck } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'

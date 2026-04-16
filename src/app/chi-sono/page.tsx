@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import { chiSonoContent } from '@/content/chi-sono'
+import { chiSonoContent } from '@/content/text'
 import Image from 'next/image'
 
 // Funzione helper per convertire **testo** in <strong>testo</strong>

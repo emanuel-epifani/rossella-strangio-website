@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import { faqContent } from '@/content/faq'
+import { faqContent } from '@/content/text'
 import { ChevronDown, ChevronUp } from 'lucide-react'
 
 export const dynamic = 'force-static'
