@@ -15,16 +15,16 @@ export default function ChiSono() {
     <>
       <Navbar />
       <main className="min-h-screen">
-        {/* Header verde scuro */}
-        <section className="bg-primary py-10">
+        {/* Header */}
+        <section className="page-header">
           <div className="container">
-            <h1 className="text-4xl font-bold text-white">{chiSonoContent.title}</h1>
-            <p className="text-lg text-white/90 whitespace-pre-line">{chiSonoContent.subtitle}</p>
+            <h1>{chiSonoContent.title}</h1>
+            <p className="whitespace-pre-line">{chiSonoContent.subtitle}</p>
           </div>
         </section>
 
         {/* Layout a due colonne */}
-        <section className="py-16 bg-white">
+        <section className="py-16 section-bg-white">
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
               {/* Foto a sinistra */}

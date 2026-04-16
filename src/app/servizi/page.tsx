@@ -19,16 +19,16 @@ export default function ComePossoAiutarti() {
     <>
       <Navbar />
       <main className="min-h-screen">
-        {/* Header verde scuro */}
-        <section className="bg-primary py-10">
+        {/* Header */}
+        <section className="page-header">
           <div className="container">
-            <h1 className="text-4xl font-bold text-white">{serviziContent.title}</h1>
-            <p className="text-lg text-white/90 mt-2 whitespace-pre-line">{serviziContent.intro}</p>
+            <h1>{serviziContent.title}</h1>
+            <p className="whitespace-pre-line">{serviziContent.intro}</p>
           </div>
         </section>
 
         {/* Card con icona e descrizione */}
-        <section className="pt-20 bg-white">
+        <section className="pt-20 section-bg-white">
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {serviziContent.services.map((service) => {
@@ -36,7 +36,7 @@ export default function ComePossoAiutarti() {
                 return (
                   <div
                     key={service.id}
-                    className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow flex flex-col"
+                    className="card-base card-hover p-6 flex flex-col"
                   >
                     <div className="flex justify-center mb-4">
                       {service.image ? (
@@ -49,8 +49,8 @@ export default function ComePossoAiutarti() {
                           />
                         </div>
                       ) : (
-                        <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
-                          <Icon className="w-8 h-8 text-primary" />
+                        <div className="icon-circle-base">
+                          <Icon />
                         </div>
                       )}
                     </div>
@@ -74,7 +74,7 @@ export default function ComePossoAiutarti() {
         </section>
 
         {/* Come funziona */}
-        <section className="py-20 bg-white">
+        <section className="py-20 section-bg-white">
           <div className="container">
             <div className="section-title">
               <h2>{serviziContent.howItWorks.title}</h2>

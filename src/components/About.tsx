@@ -4,7 +4,7 @@ import { homeContent } from '@/content/text'
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 section-bg-white">
       <div className="container">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
           {/* Immagine */}
@@ -32,7 +32,7 @@ export default function About() {
             </p>
             <Link 
               href="/chi-sono" 
-              className="inline-block text-primary hover:text-primary/80 font-medium underline underline-offset-4 transition-colors"
+              className="text-link"
             >
               {homeContent.about.linkText}
             </Link>

@@ -27,9 +27,9 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-base font-medium transition-all ${
+                className={`text-base font-bold transition-all pb-1 ${
                   pathname === item.href
-                    ? 'text-primary'
+                    ? 'text-primary border-b-2 border-primary'
                     : 'text-foreground hover:text-primary'
                 }`}
               >
@@ -56,9 +56,9 @@ export default function Navbar() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`transition-colors font-medium ${
+                  className={`transition-colors font-medium pb-1 ${
                     pathname === item.href
-                      ? 'text-primary font-semibold'
+                      ? 'text-primary font-semibold border-b-2 border-primary'
                       : 'text-foreground hover:text-primary'
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}

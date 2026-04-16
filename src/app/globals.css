@@ -3,20 +3,24 @@
 @tailwind utilities;
 
 @layer base {
+  /* CSS Variables per il tema (colori, spacing, ecc.)
+     Queste variabili vengono usate da Tailwind per generare le classi
+     Es: text-primary usa --primary, bg-muted usa --muted */
   :root {
+    /* Colori principali del tema (light mode) */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 30%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 82 25% 48%; /* #8A9A5B - Sage Green */
+    --primary: 30 43% 68%; /* #D2B48C - Beige/Tan */
     --primary-foreground: 210 40% 98%;
-    --secondary: 300 20% 79%; /* #D8BFD8 - Thistle/Malva */
+    --secondary: 35 30% 85%; /* #E8DCC8 - Beige più chiaro */
     --secondary-foreground: 222.2 84% 4.9%;
     --muted: 210 40% 96%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 82 15% 44%; /* #6B7B5C - Darker sage */
+    --accent: 25 35% 60%; /* #C4A77D - Beige più scuro per contrasto */
     --accent-foreground: 210 40% 98%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -24,14 +28,14 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 82 25% 48%;
     --radius: 0.5rem;
-    
-    /* Custom variables */
-    --text-color: #333;
-    --light-bg: #f9f9f9;
-    --white: #fff;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    /* Font families - definite qui e usate in tailwind.config.ts */
+    --font-sans: 'Arial', sans-serif; /* Font per testo generico */
+    --font-heading: 'Arial', sans-serif; /* Font per titoli */
+    --font-body: 'Arial', sans-serif; /* Font per body text */
   }
 
+  /* Dark mode - sovrascrive le variabili quando la classe .dark è presente */
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -39,13 +43,13 @@
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-    --primary: 82 25% 48%;
+    --primary: 30 43% 68%;
     --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 300 20% 79%;
+    --secondary: 35 30% 85%;
     --secondary-foreground: 210 40% 98%;
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-    --accent: 82 15% 44%;
+    --accent: 25 35% 60%;
     --accent-foreground: 210 40% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
@@ -53,24 +57,24 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 82 25% 48%;
   }
-}
 
-@layer base {
+  /* Stili base del body - applicati a tutta la pagina */
   body {
     @apply bg-muted text-foreground;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--text-color);
+    font-family: var(--font-body);
     line-height: 1.6;
-    background-color: var(--light-bg);
   }
 }
 
-/* Original design utilities */
+/* Utility Classes - classi riutilizzabili per pattern comuni
+   NOTA: Per componenti più complessi, usa @layer components invece di @layer utilities */
 @layer utilities {
+  /* Container - larghezza massima centrata */
   .container {
     @apply w-full max-w-7xl mx-auto px-4;
   }
   
+  /* Section title - titolo delle sezioni con decorazione */
   .section-title {
     @apply text-center mb-16 relative;
   }
@@ -84,9 +88,47 @@
     @apply block w-16 h-1 bg-secondary mx-auto mt-4;
   }
   
+  /* Page header - header delle pagine (titolo + sottotitolo) */
+  .page-header {
+    @apply bg-primary text-primary-foreground py-10;
+  }
+  
+  /* Section backgrounds - background per le sezioni */
+  .section-bg-white {
+    @apply bg-white;
+  }
+  
+  .section-bg-muted {
+    @apply bg-muted;
+  }
+  
+  /* Card base styling - styling base per le card */
+  .card-base {
+    @apply bg-white rounded-md border border-gray-300 shadow;
+  }
+  
+  /* Card hover - effetto hover per le card */
+  .card-hover {
+    @apply hover:shadow-lg hover:border-gray-400 transition-all;
+  }
+  
+  /* Icon circle base - cerchio con icona centrata */
+  .icon-circle-base {
+    @apply w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center;
+  }
+  
+  .icon-circle-base svg {
+    @apply w-8 h-8 text-primary;
+  }
+  
+  /* Text link styling - link stilizzato con underline */
+  .text-link {
+    @apply inline-block text-primary hover:text-primary/80 font-medium underline underline-offset-4 transition-colors;
+  }
+  
+  /* Legacy classes - da rimuovere quando non più usate */
   .cta-button {
     @apply bg-accent text-white px-6 py-3 rounded-full font-semibold transition-colors hover:bg-accent/90 focus:ring-2 focus:ring-accent focus:ring-opacity-50 inline-block;
-    /*@apply bg-accent text-white px-6 py-3 rounded-full font-semibold transition-colors hover:bg-accent/90 inline-block;*/
   }
   
   .service-card {
@@ -118,7 +160,7 @@
   }
 }
 
-/* Skip to content link for accessibility */
+/* Accessibility - link per saltare al contenuto principale (per screen reader) */
 .skip-link {
   @apply absolute -top-40 left-6 bg-primary text-white px-4 py-2 rounded transition-all focus:top-6 z-50;
 }

@@ -23,23 +23,23 @@ export default function FAQ() {
     <>
       <Navbar />
       <main className="min-h-screen">
-        {/* Header verde scuro */}
-        <section className="bg-primary py-10">
+        {/* Header */}
+        <section className="page-header">
           <div className="container">
-            <h1 className="text-4xl font-bold text-white">{faqContent.title}</h1>
-            <p className="text-lg text-white/90 mt-2">{faqContent.subtitle}</p>
+            <h1>{faqContent.title}</h1>
+            <p>{faqContent.subtitle}</p>
           </div>
         </section>
 
         {/* Accordion FAQ */}
-        <section className="py-16 bg-white">
+        <section className="py-16 section-bg-white">
           <div className="container max-w-3xl">
             <div className="space-y-4">
               {faqContent.items.map((item) => (
-                <div key={item.id} className="border border-gray-200 rounded-lg overflow-hidden">
+                <div key={item.id} className="border rounded-lg overflow-hidden">
                   <button
                     onClick={() => toggleItem(item.id)}
-                    className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
+                    className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-muted/50 transition-colors"
                   >
                     <span className="font-medium text-foreground pr-4">{item.question}</span>
                     {openItems.includes(item.id) ? (

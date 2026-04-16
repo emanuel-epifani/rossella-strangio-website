@@ -10,19 +10,19 @@ export default function Contattami() {
     <>
       <Navbar />
       <main className="min-h-screen">
-        <section className="py-10 bg-primary">
+        <section className="page-header">
           <div className="container">
-            <h1 className="text-4xl font-bold text-white mb-6">{contattamiContent.title}</h1>
-            <p className="text-lg text-white ">
+            <h1 className="mb-6">{contattamiContent.title}</h1>
+            <p className="text-lg">
               {contattamiContent.subtitle}
             </p>
           </div>
         </section>
 
         {/* Sezione 1: Contatti */}
-        <section className="py-16 bg-white">
+        <section className="py-16 section-bg-white">
           <div className="container">
-            <h2 className="text-2xl font-bold text-primary mb-8">Contatti Diretti</h2>
+            <h2 className="text-2xl font-bold text-primary mb-8">Contatti</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {contattamiContent.contactMethods.map((method) => {
                 const IconComponent = method.icon === 'Phone' ? Phone : method.icon === 'MessageCircle' ? MessageCircle : Mail
@@ -32,7 +32,7 @@ export default function Contattami() {
                     href={method.link}
                     target={method.icon === 'MessageCircle' ? '_blank' : undefined}
                     rel={method.icon === 'MessageCircle' ? 'noopener noreferrer' : undefined}
-                    className="bg-white p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-lg hover:border-gray-300 transition-all text-center"
+                    className="card-base card-hover p-6 text-center"
                   >
                     <IconComponent size={32} className="text-primary mb-4 mx-auto" />
                     <h3 className="font-semibold text-lg mb-2">{method.title}</h3>
@@ -45,12 +45,12 @@ export default function Contattami() {
         </section>
 
         {/* Sezione 2: Dove Riceve */}
-        <section className="py-16 bg-white">
+        <section className="py-16 section-bg-white">
           <div className="container">
             <h2 className="text-2xl font-bold text-primary mb-8">Dove Ricevo</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Online */}
-              <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-lg hover:border-gray-300 transition-all">
+              <div className="card-base card-hover p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <Clock size={32} className="text-primary" />
                   <h3 className="font-semibold text-xl">Online</h3>
@@ -64,7 +64,7 @@ export default function Contattami() {
               </div>
 
               {/* In presenza */}
-              <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-lg hover:border-gray-300 transition-all">
+              <div className="card-base card-hover p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <MapPin size={32} className="text-primary" />
                   <h3 className="font-semibold text-xl">In Presenza</h3>

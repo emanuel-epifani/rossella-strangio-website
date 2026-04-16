@@ -4,7 +4,7 @@ import { homeContent } from '@/content/text'
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-muted">
+    <section id="contact" className="py-20 section-bg-muted">
       <div className="container">
         <div className="section-title">
           <h2>{homeContent.contact.title}</h2>
@@ -16,28 +16,28 @@ export default function Contact() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <a href={homeContent.contact.methods[0].link} className="bg-white p-6 rounded-lg border border-gray-200 hover:border-gray-300 transition-colors">
+            <a href={homeContent.contact.methods[0].link} className="card-base card-hover p-6">
               <Phone className="text-primary mx-auto mb-3" size={28} />
               <h3 className="font-semibold mb-2">{homeContent.contact.methods[0].title}</h3>
-              <p className="text-sm text-muted-foreground">{homeContent.contact.methods[0].contact}</p>
+              <p className="text-sm">{homeContent.contact.methods[0].contact}</p>
             </a>
 
-            <a href={homeContent.contact.methods[1].link} target="_blank" rel="noopener noreferrer" className="bg-white p-6 rounded-lg border border-gray-200 hover:border-gray-300 transition-colors">
+            <a href={homeContent.contact.methods[1].link} target="_blank" rel="noopener noreferrer" className="card-base card-hover p-6">
               <MessageCircle className="text-primary mx-auto mb-3" size={28} />
               <h3 className="font-semibold mb-2">{homeContent.contact.methods[1].title}</h3>
-              <p className="text-sm text-muted-foreground">{homeContent.contact.methods[1].contact}</p>
+              <p className="text-sm">{homeContent.contact.methods[1].contact}</p>
             </a>
 
-            <a href={homeContent.contact.methods[2].link} className="bg-white p-6 rounded-lg border border-gray-200 hover:border-gray-300 transition-colors">
+            <a href={homeContent.contact.methods[2].link} className="card-base card-hover p-6">
               <Mail className="text-primary mx-auto mb-3" size={28} />
               <h3 className="font-semibold mb-2">{homeContent.contact.methods[2].title}</h3>
-              <p className="text-sm text-muted-foreground">{homeContent.contact.methods[2].contact}</p>
+              <p className="text-sm">{homeContent.contact.methods[2].contact}</p>
             </a>
           </div>
 
           <Link 
             href="/contattami" 
-            className="inline-block text-primary hover:text-primary/80 font-medium underline underline-offset-4 transition-colors"
+            className="text-link"
           >
             {homeContent.contact.linkText}
           </Link>
