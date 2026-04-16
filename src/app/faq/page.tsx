@@ -26,8 +26,8 @@ export default function FAQ() {
         {/* Header */}
         <section className="page-header">
           <div className="container">
-            <h1>{faqContent.title}</h1>
-            <p>{faqContent.subtitle}</p>
+            <h1 className="mb-2 text-4xl font-bold">{faqContent.title}</h1>
+            <p className="text-lg">{faqContent.subtitle}</p>
           </div>
         </section>
 

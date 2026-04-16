@@ -12,7 +12,7 @@ export default function Contattami() {
       <main className="min-h-screen">
         <section className="page-header">
           <div className="container">
-            <h1 className="mb-6">{contattamiContent.title}</h1>
+            <h1 className="mb-2 text-4xl font-bold">{contattamiContent.title}</h1>
             <p className="text-lg">
               {contattamiContent.subtitle}
             </p>

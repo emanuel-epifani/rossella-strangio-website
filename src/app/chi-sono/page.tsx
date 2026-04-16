@@ -18,8 +18,8 @@ export default function ChiSono() {
         {/* Header */}
         <section className="page-header">
           <div className="container">
-            <h1>{chiSonoContent.title}</h1>
-            <p className="whitespace-pre-line">{chiSonoContent.subtitle}</p>
+            <h1 className="mb-2 text-4xl font-bold">{chiSonoContent.title}</h1>
+            <p className="text-lg whitespace-pre-line">{chiSonoContent.subtitle}</p>
           </div>
         </section>
 

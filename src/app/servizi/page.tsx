@@ -22,8 +22,8 @@ export default function ComePossoAiutarti() {
         {/* Header */}
         <section className="page-header">
           <div className="container">
-            <h1>{serviziContent.title}</h1>
-            <p className="whitespace-pre-line">{serviziContent.intro}</p>
+            <h1 className="mb-2 text-4xl font-bold">{serviziContent.title}</h1>
+            <p className="text-lg whitespace-pre-line">{serviziContent.intro}</p>
           </div>
         </section>
 
