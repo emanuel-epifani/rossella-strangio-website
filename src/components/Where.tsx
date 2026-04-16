@@ -9,9 +9,9 @@ export default function Where() {
           <h2>Dove ricevo</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 max-w-4xl mx-auto">
           {/* Online */}
-          <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm text-center">
+          <div className="bg-white p-5 rounded-lg border border-gray-200 shadow-sm text-center">
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
               <Video className="w-8 h-8 text-primary" />
             </div>
@@ -22,7 +22,7 @@ export default function Where() {
           </div>
 
           {/* In presenza */}
-          <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm text-center">
+          <div className="bg-white p-5 rounded-lg border border-gray-200 shadow-sm text-center">
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
               <MapPin className="w-8 h-8 text-primary" />
             </div>
