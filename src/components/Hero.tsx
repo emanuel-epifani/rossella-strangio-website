@@ -3,7 +3,7 @@ import { homeContent } from '@/content/text'
 
 export default function Hero() {
   return (
-    <section className="bg-muted">
+    <section className="bg-white">
       <div className="container flex flex-col md:flex-row items-center gap-12">
         {/* Colonna sinistra: Immagine */}
         <div className="flex-shrink-0 flex items-center justify-center">

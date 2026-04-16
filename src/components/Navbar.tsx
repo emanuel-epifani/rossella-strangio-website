@@ -18,7 +18,7 @@ export default function Navbar() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md py-6">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md border-2 border-primary py-4">
       <div className="container">
         <nav className="flex items-center justify-center">
           {/* Desktop Navigation - Centered */}
