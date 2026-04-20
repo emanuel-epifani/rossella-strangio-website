@@ -94,13 +94,13 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="text-primary-foreground/80">
                 <a 
-                  href="https://areariservata.psy.it/albo/iscritto/rossella_strangio_182845" 
-                  target="_blank" 
+                  href="https://ordinepsicologi.piemonte.it/albo-vista/?id=8933"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary-foreground transition-colors"
                 >
-                  <strong className="text-primary-foreground">Ordine Psicologi</strong><br />
-                  N° Iscrizione: 182845
+                  <strong className="text-primary-foreground">Ordine Psicologi del Piemonte</strong><br />
+                  N° Iscrizione: 9144
                 </a>
               </li>
               <li className="text-primary-foreground/80">
