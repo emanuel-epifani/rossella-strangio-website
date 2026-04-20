@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'it_IT',
     url: 'https://rossella-strangio.it',
-    title: 'Dott.ssa Rossella Strangio | Psicologa a Torino e Online',
-    description: '🔹 Psicologa specializzata a Torino. Prima seduta GRATUITA. Terapia per ansia, depressione, attacchi di panico. ✅ Online e in studio.',
+    title: 'Dott.ssa Rossella Strangio | Psicologa e Psicoterapeuta',
+    description: 'Psicologa e Psicoterapeuta cognitivo-comportamentale a Torino e Online. Terapia per ansia, depressione, attacchi di panico.',
     siteName: 'Dott.ssa Rossella Strangio - Psicologa',
     images: [
       {
