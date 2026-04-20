@@ -74,8 +74,8 @@ export const homeContent = {
       {
         icon: "Mail",
         title: "Email",
-        contact: "rossella.strangio@gmail.com",
-        link: "mailto:rossella.strangio@gmail.com"
+        contact: "rossella.strangio.psicologa@gmail.com",
+        link: "mailto:rossella.strangio.psicologa@gmail.com"
       }
     ],
     linkText: "Scopri orari e sede"
@@ -126,9 +126,9 @@ export const contattamiContent = {
       id: 3,
       title: "Email",
       description: "Scrivi una email per informazioni dettagliate o per fissare un appuntamento.",
-      contact: "rossella.strangio@gmail.com",
+      contact: "rossella.strangio.psicologa@gmail.com",
       availability: "Risposta entro 24h",
-      link: "mailto:rossella.strangio@gmail.com?subject=Richiesta informazioni",
+      link: "mailto:rossella.strangio.psicologa@gmail.com?subject=Richiesta informazioni",
       icon: "Mail",
       buttonText: "Invia Email"
     }

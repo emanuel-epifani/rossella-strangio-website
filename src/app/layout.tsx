@@ -40,7 +40,7 @@ const structuredData = {
   "image": "/images/chi-sono.png",
   "url": "https://rossella-strangio.it",
   "telephone": "+393343071131",
-  "email": "rossella.strangio@gmail.com",
+  "email": "rossella.strangio.psicologa@gmail.com",
   "description": "Psicologa specializzata a Torino. Terapia per ansia, depressione, attacchi di panico. Consulenze online e in studio. Prima seduta senza impegno.",
   "address": {
     "@type": "PostalAddress",

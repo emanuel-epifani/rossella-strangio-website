@@ -152,7 +152,7 @@ npm run dev
 
 **Dott.ssa Rossella Strangio**
 - 📱 +39 334 307 1131
-- 📧 rossella.strangio@gmail.com  
+- 📧 rossella.strangio.psicologa@gmail.com  
 - 📍 Via Roma, 123 - 10100 Torino (TO)
 
 ---
