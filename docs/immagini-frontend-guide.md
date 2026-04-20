@@ -206,13 +206,13 @@ export default function Page() {
 - ❌ Se resta PNG: comprimilo con TinyPNG
 - ✅ Usa `next/image` con `priority`
 
-### chi-sono.PNG
+### chi-sono.png
 - ❌ Rinomina in minuscolo: `chi-sono.png`
 - ❌ È una foto? Considera WebP (o lascia PNG, Next.js converte)
 - ❌ Comprimi con TinyPNG/Squoosh
 - ✅ Usa `next/image` con `fill` se responsive
 
-### chi-sono.PNG
+### chi-sono.png
 - ✅ Già ottimizzato? Comprimi ulteriormente se necessario
 - ✅ Usa `next/image` nel codice (già fatto nel progetto)
 

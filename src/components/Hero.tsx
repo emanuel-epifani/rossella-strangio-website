@@ -8,7 +8,7 @@ export default function Hero() {
         {/* Colonna sinistra: Immagine */}
         <div className="flex-shrink-0 flex items-center justify-center">
           <Image 
-            src="/images/Rossella Strangio.png"
+            src="/images/logo-website.png"
             alt={homeContent.hero.imageAlt}
             width={400}
             height={400}

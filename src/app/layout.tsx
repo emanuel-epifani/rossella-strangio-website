@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: 'Dott.ssa Rossella Strangio - Psicologa',
     images: [
       {
-        url: '/images/chi-sono.PNG',
+        url: '/images/chi-sono.png',
         width: 1200,
         height: 630,
         alt: 'Dott.ssa Rossella Strangio - Psicologa a Torino',
@@ -37,7 +37,7 @@ const structuredData = {
   "@type": ["MedicalBusiness", "LocalBusiness", "ProfessionalService"],
   "name": "Dott.ssa Rossella Strangio - Psicologa",
   "alternateName": "Rossella Strangio Psicologa Torino",
-  "image": "/images/chi-sono.PNG",
+  "image": "/images/chi-sono.png",
   "url": "https://rossella-strangio.it",
   "telephone": "+393343071131",
   "email": "rossella.strangio@gmail.com",
@@ -145,7 +145,7 @@ export default function RootLayout({
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
         {/* Preload critical resources */}
-        <link rel="preload" href="/images/chi-sono.PNG" as="image" />
+        <link rel="preload" href="/images/chi-sono.png" as="image" />
 
         {/* Theme color */}
         <meta name="theme-color" content="#8A9A5B" />
