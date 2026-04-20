@@ -21,7 +21,7 @@ In questo spazio puoi fermarti, capire cosa sta succedendo e iniziare a lavorarc
     items: [
       {
         icon: "User",
-        title: "Adulti",
+        title: "Giovani e Adulti",
         description: "Percorsi individuali per affrontare ansia, depressione, disturbi dell'umore, pensieri ossessivi e difficoltà emotive."
       },
       {
@@ -43,12 +43,12 @@ In questo spazio puoi fermarti, capire cosa sta succedendo e iniziare a lavorarc
       {
         icon: "Video",
         title: "Online",
-        description: "In videochiamata da lunedì a giovedì, 16:00-18:00. Un modo efficace per ricevere supporto psicologico senza spostamenti."
+        description: "In videochiamata da lunedì a venerdì. Un modo efficace per ricevere supporto psicologico senza spostamenti."
       },
       {
         icon: "MapPin",
         title: "In presenza",
-        description: "Nel mio studio di Torino il lunedì, 14:00-20:00. Un ambiente accogliente e riservato per i colloqui."
+        description: "Nel mio studio a Torino in Via Vagnone 2. Un ambiente accogliente e riservato per i colloqui."
       }
     ],
     linkText: "Scopri indirizzo e dettagli"

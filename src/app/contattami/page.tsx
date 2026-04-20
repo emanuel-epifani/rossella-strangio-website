@@ -75,7 +75,7 @@ export default function Contattami() {
                   <p className="text-sm text-muted-foreground font-medium">Come arrivare:</p>
                   <div className="flex items-center gap-2 text-sm">
                     <Train size={16} className="text-primary" />
-                    <span className="text-foreground">Metro: (Linea 1) - Fermata Principi d'Acaja</span>
+                    <span className="text-foreground">Metro: (Linea 1) - Fermata Principi d&#39;Acaja</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
                     <Bus size={16} className="text-primary" />

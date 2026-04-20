@@ -6,15 +6,15 @@ export default function About() {
   return (
     <section id="about" className="py-16 section-bg-white">
       <div className="container">
-        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+        <div className="flex flex-col lg:flex-row items-center px-10">
           {/* Immagine */}
-          <figure className="flex-1 lg:max-w-xs">
+          <figure className="flex-1 lg:max-w-xs mb-10">
             <Image
               src="/images/chi-sono.png"
               alt={homeContent.about.imageAlt}
               width={200}
               height={200}
-              className="w-full max-w-[200px] shadow-lg mx-auto lg:mx-0"
+              className="rounded-xl shadow-2xl w-full max-w-[200px] mx-auto lg:mx-0"
               priority
             />
           </figure>

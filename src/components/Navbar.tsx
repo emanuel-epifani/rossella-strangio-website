@@ -3,7 +3,9 @@
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
+import { homeContent } from '@/content/text'
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -18,11 +20,23 @@ export default function Navbar() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md border-2 border-primary py-4">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md border-2 border-primary py-2">
       <div className="container">
-        <nav className="flex items-center justify-center">
+        <nav className="flex items-center justify-between">
+          {/* Mobile: Logo + Name */}
+          <div className="flex md:hidden items-center gap-2">
+            <Image 
+              src="/images/logo-website.png"
+              alt="Logo"
+              width={40}
+              height={40}
+              className="object-contain w-8 h-8"
+            />
+            <span className="font-semibold text-sm leading-tight">Dott.ssa Rossella Strangio</span>
+          </div>
+
           {/* Desktop Navigation - Centered */}
-          <div className="hidden md:flex space-x-10">
+          <div className="hidden md:flex space-x-10 flex-1 justify-center">
             {navItems.map((item) => (
               <Link
                 key={item.href}

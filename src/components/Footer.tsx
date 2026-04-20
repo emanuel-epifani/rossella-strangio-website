@@ -7,10 +7,10 @@ import Link from 'next/link'
 export default function Footer() {
 
   return (
-      <footer className="bg-primary text-primary-foreground py-16">
-        <div className="container flex flex-col md:flex-row items-stretch gap-8 md:gap-8">
+      <footer className="bg-primary text-primary-foreground py-16 px-2">
+        <div className="container flex flex-col md:flex-row md:justify-center gap-8 md:gap-12">
           {/* Colonna 1 - Contatti */}
-          <div className="flex-col justify-between flex-1">
+          <div className="flex flex-col md:w-1/3">
             <h4 className="text-lg font-semibold mb-4">Contatti</h4>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
@@ -57,7 +57,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex-col justify-between flex-1">
+          <div className="flex flex-col md:w-1/3">
             <h4 className="text-lg font-semibold mb-4">Link Rapidi</h4>
             <ul className="space-y-2">
               <li>
@@ -89,7 +89,7 @@ export default function Footer() {
           </div>
 
           {/* Colonna 3 - Info professionali */}
-          <div className="flex-col justify-between flex-1">
+          <div className="flex flex-col md:w-1/3">
             <h4 className="text-lg font-semibold mb-4">Informazioni Professionali</h4>
             <ul className="space-y-3 text-sm">
               <li className="text-primary-foreground/80">
