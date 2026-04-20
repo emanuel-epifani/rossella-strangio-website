@@ -4,18 +4,16 @@ export const homeContent = {
     name: "Dott.ssa Rossella Strangio",
     title: "Psicologa Psicoterapeuta ad orientamento",
     specialization: "Cognitivo Comportamentale",
-    location: "TORINO e ONLINE",
+    location: "Torino e Online",
     imageAlt: "Dott.ssa Rossella Strangio"
   },
   about: {
     title: "Benvenuti nel mio spazio",
-    paragraph1: `La vita a volte ti mette di fronte a sfide difficili – ma non devi affrontarle da solo.
-              Sono una psicologa, specializzata nel supporto di adulti e coppie,
-              e ti offro uno spazio sicuro, accogliente e senza giudizio per aiutarti
-              a trovare la serenità che meriti.`,
-    paragraph2: `Insieme useremo strategie pratiche e scientificamente provate per
-              aiutarti a ritrovare equilibrio e serenità.`,
-    linkText: "Scopri di più sulla mia formazione",
+    paragraph1: `Ci sono momenti in cui ci si sente bloccati, sopraffatti o in difficoltà nel gestire ciò che si prova.
+Ansia, pensieri che si ripetono, relazioni complicate o semplicemente la sensazione di non stare bene come si vorrebbe.
+In questo spazio puoi fermarti, capire cosa sta succedendo e iniziare a lavorarci in modo concreto.`,
+    paragraph2: `Il mio approccio è cognitivo comportamentale: utilizzeremo strumenti pratici e strategie mirate per aiutarti a gestire meglio pensieri, emozioni e comportamenti.`,
+    linkText: "Scopri di più su di me",
     imageAlt: "Dott.ssa Rossella Strangio"
   },
   patients: {
