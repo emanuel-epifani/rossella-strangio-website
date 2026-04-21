@@ -34,7 +34,7 @@ export default function ChiSono() {
                   alt="Foto Dott.ssa Rossella Strangio"
                   width={500}
                   height={300}
-                  className="rounded-lg shadow-md h-auto"
+                  className="rounded-lg shadow-md h-auto w-auto"
                 />
               </div>
 

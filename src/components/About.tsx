@@ -14,7 +14,7 @@ export default function About() {
               alt={homeContent.about.imageAlt}
               width={200}
               height={200}
-              className="rounded-xl shadow-2xl w-full max-w-[200px] mx-auto lg:mx-0"
+              className="rounded-xl shadow-2xl w-full max-w-[200px] h-auto mx-auto lg:mx-0"
               priority
             />
           </figure>

@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 export const metadata: Metadata = {
   title: 'Dott.ssa Rossella Strangio | Psicologa a Torino – Consulenze Online e In Studio',
   description: 'Psicologa Psicoterapueta a Torino e Online. Terapia per ansia, attacchi di panico, depressione teraia di coppia e anziani.',
+  metadataBase: new URL('https://rossellastrangio.it'),
   alternates: {
     canonical: '/',
   },
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     siteName: 'Dott.ssa Rossella Strangio - Psicologa',
     images: [
       {
-        url: '/images/chi-sono.png',
+        url: '/images/logo-website.png',
         width: 1200,
         height: 630,
         alt: 'Dott.ssa Rossella Strangio - Psicologa a Torino',
