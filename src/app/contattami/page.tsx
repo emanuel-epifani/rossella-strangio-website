@@ -36,7 +36,7 @@ export default function Contattami() {
                   >
                     <IconComponent size={32} className="text-primary mb-4 mx-auto" />
                     <h3 className="font-semibold text-lg mb-2">{method.title}</h3>
-                    <p className="text-foreground">{method.contact}</p>
+                    <p className="text-foreground break-words">{method.contact}</p>
                   </a>
                 )
               })}
