@@ -1,13 +1,31 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import StructuredData from '@/components/StructuredData'
 import { Phone, MessageCircle, Mail, MapPin, Clock, Train, Bus, TramFront } from 'lucide-react'
 import { contattamiContent } from '@/content/text'
+import { buildMetadata, getBreadcrumbSchema, getLocalBusinessSchema } from '@/lib/seo'
 
 export const dynamic = 'force-static'
+
+export const metadata = buildMetadata({
+  title: 'Contatti e studio a Torino | Dott.ssa Rossella Strangio',
+  description:
+    'Contatti, indirizzo dello studio a Torino, modalità online e informazioni per prenotare un colloquio con la Dott.ssa Rossella Strangio.',
+  pathname: '/contattami',
+})
 
 export default function Contattami() {
   return (
     <>
+      <StructuredData
+        data={[
+          getLocalBusinessSchema(),
+          getBreadcrumbSchema([
+            { name: 'Home', pathname: '/' },
+            { name: 'Contatti', pathname: '/contattami' },
+          ]),
+        ]}
+      />
       <Navbar />
       <main className="min-h-screen">
         <section className="page-header">

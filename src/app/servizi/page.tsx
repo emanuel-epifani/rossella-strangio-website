@@ -1,10 +1,19 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import StructuredData from '@/components/StructuredData'
 import { serviziContent } from '@/content/text'
 import { Brain, HeartPulse, Users, GraduationCap, UserCheck, Clock, Video, Phone, FileText, Calendar } from 'lucide-react'
 import Image from 'next/image'
+import { buildMetadata, getBreadcrumbSchema, getServicesSchema } from '@/lib/seo'
 
 export const dynamic = 'force-static'
+
+export const metadata = buildMetadata({
+  title: 'Servizi di psicoterapia e neuropsicologia a Torino e Online | Dott.ssa Rossella Strangio',
+  description:
+    'Psicoterapia individuale, terapia di coppia, neuropsicologia, supporto ai caregiver e formazione per operatori sanitari a Torino e online.',
+  pathname: '/servizi',
+})
 
 export default function ComePossoAiutarti() {
   const icons = {
@@ -17,6 +26,15 @@ export default function ComePossoAiutarti() {
 
   return (
     <>
+      <StructuredData
+        data={[
+          getServicesSchema(),
+          getBreadcrumbSchema([
+            { name: 'Home', pathname: '/' },
+            { name: 'Servizi', pathname: '/servizi' },
+          ]),
+        ]}
+      />
       <Navbar />
       <main className="min-h-screen">
         {/* Header */}
