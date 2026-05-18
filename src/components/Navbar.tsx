@@ -41,10 +41,10 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-base font-bold transition-all pb-1 ${
+                className={`text-base font-bold transition-all px-4 py-2 rounded-lg ${
                   pathname === item.href
-                    ? 'text-primary border-b-2 border-primary'
-                    : 'text-foreground hover:text-primary'
+                    ? 'text-primary bg-primary/10'
+                    : 'text-foreground hover:text-primary hover:bg-primary/5'
                 }`}
               >
                 {item.label}
@@ -65,15 +65,15 @@ export default function Navbar() {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden border-t py-6">
-            <div className="flex flex-col space-y-5">
+            <div className="flex flex-col space-y-3 items-center">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`transition-colors font-medium pb-1 ${
+                  className={`transition-all font-medium px-6 py-3 rounded-lg w-full max-w-xs text-center ${
                     pathname === item.href
-                      ? 'text-primary font-semibold border-b-2 border-primary'
-                      : 'text-foreground hover:text-primary'
+                      ? 'text-primary font-semibold bg-primary/10'
+                      : 'text-foreground hover:text-primary hover:bg-primary/5'
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
