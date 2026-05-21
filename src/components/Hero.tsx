@@ -3,32 +3,49 @@ import { homeContent } from '@/content/text'
 
 export default function Hero() {
   return (
-    <section className="bg-white hidden md:block">
-      <div className="container flex flex-col md:flex-row justify-center gap-12 py-10">
+    <section className="relative overflow-hidden hidden md:block">
+      {/* Decorative warm gradient backdrop */}
+      <div
+        aria-hidden
+        className="absolute inset-0 -z-10"
+        style={{
+          background: `
+            radial-gradient(60% 70% at 15% 30%, hsl(var(--primary) / 0.18) 0%, transparent 60%),
+            radial-gradient(50% 60% at 90% 20%, hsl(var(--accent) / 0.10) 0%, transparent 60%),
+            linear-gradient(180deg, hsl(var(--secondary) / 0.35) 0%, hsl(var(--background)) 100%)
+          `,
+        }}
+      />
+
+      <div className="container flex flex-col md:flex-row justify-center items-center gap-12 py-16">
         {/* Colonna sinistra: Immagine */}
-        <div className="flex-shrink-0 flex ">
-          <Image 
+        <div className="flex-shrink-0 flex relative">
+          <div
+            aria-hidden
+            className="absolute inset-0 rounded-full bg-primary/10 blur-2xl scale-90"
+          />
+          <Image
             src="/images/logo-website.png"
             alt={homeContent.hero.imageAlt}
             width={200}
             height={200}
             priority
-            // className="object-contain w-full max-w-md"
-            className="object-contain w-52 h-52"
+            className="relative object-contain w-52 h-52"
           />
         </div>
 
         {/* Colonna destra: Testo */}
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center animate-fade-up">
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <span className="eyebrow mb-4">Psicologa · Psicoterapeuta</span>
+            <h1 className="font-heading text-4xl md:text-5xl font-semibold mb-4 tracking-tight text-foreground mt-3">
               {homeContent.hero.name}
             </h1>
-            <h2 className="text-xl md:text-xl mb-2">
-              {homeContent.hero.title} <span className="underline decoration-2 decoration-primary font-bold">{homeContent.hero.specialization}</span>
+            <h2 className="text-lg md:text-xl mb-2 text-foreground/85 font-normal">
+              {homeContent.hero.title} <span className="text-primary font-semibold">{homeContent.hero.specialization}</span>
             </h2>
-            <p className="text-lg md:text-xl mb-4">
-              Percorsi di psicoterapia a <span className="underline decoration-2 decoration-primary font-bold">{homeContent.hero.location}</span>
+            <p className="text-base md:text-lg text-muted-foreground">
+              Percorsi di psicoterapia a <span className="text-primary font-semibold">{homeContent.hero.location}</span>
             </p>
           </div>
         </div>

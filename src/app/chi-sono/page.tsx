@@ -33,23 +33,24 @@ export default function ChiSono() {
         {/* Header */}
         <section className="page-header">
           <div className="container">
-            <h1 className="mb-2 text-4xl font-bold">{chiSonoContent.title}</h1>
-            <p className="text-lg whitespace-pre-line">{chiSonoContent.subtitle}</p>
+            <span className="eyebrow mb-3">Profilo professionale</span>
+            <h1 className="mb-3 mt-3 text-4xl md:text-5xl font-semibold tracking-tight">{chiSonoContent.title}</h1>
+            <p className="text-lg whitespace-pre-line text-foreground/75 max-w-2xl">{chiSonoContent.subtitle}</p>
           </div>
         </section>
 
         {/* Layout a due colonne */}
         <section className="py-16 section-bg-white">
           <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
               {/* Foto a sinistra */}
-              <div className="relative">
+              <div className="portrait-frame inline-block">
                 <Image
                   src="/images/chi-sono.jpeg"
                   alt="Foto Dott.ssa Rossella Strangio"
                   width={500}
                   height={300}
-                  className="rounded-lg shadow-md h-auto w-auto"
+                  className="relative rounded-2xl shadow-soft-lg h-auto w-auto ring-1 ring-border/60"
                 />
               </div>
 

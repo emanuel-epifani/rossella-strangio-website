@@ -7,62 +7,78 @@
      Queste variabili vengono usate da Tailwind per generare le classi
      Es: text-primary usa --primary, bg-muted usa --muted */
   :root {
-    /* Colori principali del tema (light mode) */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 30%;
+    /* Colori principali del tema (light mode) - palette calda, warm cream */
+    --background: 36 40% 98%;            /* warm off-white / cream */
+    --foreground: 25 18% 22%;            /* warm dark ink, non pure black */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 25 18% 22%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 30 43% 68%; /* #D2B48C - Beige/Tan */
-    --primary-foreground: 210 40% 98%;
-    --secondary: 35 30% 85%; /* #E8DCC8 - Beige più chiaro */
-    --secondary-foreground: 222.2 84% 4.9%;
-    --muted: 210 40% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 25 35% 60%; /* #C4A77D - Beige più scuro per contrasto */
-    --accent-foreground: 210 40% 98%;
+    --popover-foreground: 25 18% 22%;
+    --primary: 30 38% 62%;               /* beige/tan ricco */
+    --primary-foreground: 36 40% 98%;
+    --secondary: 35 45% 90%;             /* beige chiarissimo per fondi */
+    --secondary-foreground: 25 18% 22%;
+    --muted: 35 30% 96%;                 /* fondo sezione sand chiarissimo */
+    --muted-foreground: 25 12% 45%;
+    --accent: 22 38% 48%;                /* terracotta soft per dettagli */
+    --accent-foreground: 36 40% 98%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 82 25% 48%;
-    --radius: 0.5rem;
+    --border: 32 25% 88%;                /* warm border */
+    --input: 32 25% 88%;
+    --ring: 30 38% 62%;
+    --radius: 1rem;
 
     /* Font families - definite qui e usate in tailwind.config.ts */
-    --font-sans: 'Arial', sans-serif; /* Font per testo generico */
-    --font-heading: 'Arial', sans-serif; /* Font per titoli */
-    --font-body: 'Arial', sans-serif; /* Font per body text */
+    --font-sans: var(--font-inter), 'Inter', system-ui, -apple-system, sans-serif;
+    --font-heading: var(--font-fraunces), 'Fraunces', 'Cormorant Garamond', Georgia, serif;
+    --font-body: var(--font-inter), 'Inter', system-ui, -apple-system, sans-serif;
   }
 
   /* Dark mode - sovrascrive le variabili quando la classe .dark è presente */
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 30 43% 68%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 35 30% 85%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 25 35% 60%;
-    --accent-foreground: 210 40% 98%;
+    --background: 25 15% 10%;
+    --foreground: 36 30% 94%;
+    --card: 25 15% 12%;
+    --card-foreground: 36 30% 94%;
+    --popover: 25 15% 12%;
+    --popover-foreground: 36 30% 94%;
+    --primary: 30 38% 62%;
+    --primary-foreground: 25 15% 10%;
+    --secondary: 25 15% 18%;
+    --secondary-foreground: 36 30% 94%;
+    --muted: 25 15% 15%;
+    --muted-foreground: 36 15% 70%;
+    --accent: 22 38% 55%;
+    --accent-foreground: 25 15% 10%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 82 25% 48%;
+    --border: 25 15% 20%;
+    --input: 25 15% 20%;
+    --ring: 30 38% 62%;
   }
 
   /* Stili base del body - applicati a tutta la pagina */
   body {
-    @apply bg-muted text-foreground;
+    @apply bg-background text-foreground antialiased;
     font-family: var(--font-body);
-    line-height: 1.6;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.25);
+    color: hsl(var(--foreground));
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 }
 
@@ -73,90 +89,135 @@
   .container {
     @apply w-full max-w-7xl mx-auto px-4;
   }
-  
-  /* Section title - titolo delle sezioni con decorazione */
+
+  /* Section title - titolo della sezione con eyebrow + accento sotto */
   .section-title {
-    @apply text-center mb-16 relative;
+    @apply text-center mb-14 relative flex flex-col items-center;
   }
-  
+
   .section-title h2 {
-    @apply text-3xl font-bold text-primary;
+    @apply font-heading text-3xl md:text-4xl font-semibold text-foreground tracking-tight;
   }
-  
+
+  .section-title::before {
+    content: '';
+    @apply block w-8 h-px bg-primary/70 mb-4;
+  }
+
   .section-title::after {
     content: '';
-    @apply block w-16 h-1 bg-secondary mx-auto mt-4;
+    @apply block w-12 h-px bg-primary/40 mx-auto mt-5;
   }
-  
-  /* Page header - header delle pagine (titolo + sottotitolo) */
+
+  /* Page header - hero secondario con gradient caldo */
   .page-header {
-    @apply bg-primary text-primary-foreground py-10;
+    @apply relative overflow-hidden py-16 md:py-20 text-foreground;
+    background:
+      radial-gradient(120% 100% at 0% 0%, hsl(var(--primary) / 0.18) 0%, transparent 55%),
+      radial-gradient(80% 80% at 100% 0%, hsl(var(--accent) / 0.10) 0%, transparent 60%),
+      linear-gradient(180deg, hsl(var(--secondary) / 0.55) 0%, hsl(var(--background)) 100%);
   }
-  
-  /* Section backgrounds - background per le sezioni */
+
+  .page-header h1 {
+    @apply font-heading font-semibold tracking-tight;
+  }
+
+  /* Sezione: background bianco / muted (cream chiarissimo) */
   .section-bg-white {
-    @apply bg-white;
+    @apply bg-background;
   }
-  
+
   .section-bg-muted {
     @apply bg-muted;
   }
-  
-  /* Card base styling - styling base per le card */
+
+  /* Card base: bordo warm, ombra soffusa multistrato, raggio generoso */
   .card-base {
-    @apply bg-white rounded-md border border-gray-300 shadow;
+    @apply bg-card rounded-2xl border border-border/70;
+    box-shadow:
+      0 1px 2px hsl(25 25% 20% / 0.04),
+      0 8px 24px -12px hsl(25 25% 20% / 0.10);
   }
-  
-  /* Card hover - effetto hover per le card */
+
+  /* Card hover: lift sottile + ombra più morbida */
   .card-hover {
-    @apply hover:shadow-lg hover:border-gray-400 transition-all;
+    @apply transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-primary/40;
   }
-  
-  /* Icon circle base - cerchio con icona centrata */
+  .card-hover:hover {
+    box-shadow:
+      0 2px 4px hsl(25 25% 20% / 0.05),
+      0 20px 40px -20px hsl(25 25% 20% / 0.18);
+  }
+
+  /* Icon circle: gradient sand + ring sottile */
   .icon-circle-base {
-    @apply w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center;
+    @apply w-16 h-16 rounded-full flex items-center justify-center ring-1 ring-primary/15;
+    background:
+      radial-gradient(120% 120% at 30% 20%, hsl(var(--secondary) / 0.9) 0%, hsl(var(--primary) / 0.18) 100%);
   }
-  
+
   .icon-circle-base svg {
-    @apply w-8 h-8 text-primary;
+    @apply w-7 h-7 text-primary;
+    stroke-width: 1.6;
   }
-  
-  /* Text link styling - link stilizzato con underline */
+
+  /* Text link */
   .text-link {
-    @apply inline-block text-primary hover:text-primary/80 font-medium underline underline-offset-4 transition-colors;
+    @apply inline-flex items-center gap-1.5 text-primary hover:text-accent font-medium transition-colors relative;
   }
-  
-  /* Legacy classes - da rimuovere quando non più usate */
+  .text-link::after {
+    content: '→';
+    @apply transition-transform duration-300;
+  }
+  .text-link:hover::after {
+    @apply translate-x-1;
+  }
+
+  /* Eyebrow uppercase, usato sopra ai titoli per ritmo editoriale */
+  .eyebrow {
+    @apply inline-block text-[11px] uppercase tracking-[0.22em] text-primary font-semibold;
+  }
+
+  /* Wrapper decorativo per immagini portrait con offset shape dietro */
+  .portrait-frame {
+    @apply relative;
+  }
+  .portrait-frame::before {
+    content: '';
+    @apply absolute -inset-3 md:-inset-4 rounded-2xl bg-secondary/60 -z-10 translate-x-3 translate-y-3 md:translate-x-4 md:translate-y-4;
+  }
+
+  /* Legacy classes */
   .cta-button {
-    @apply bg-accent text-white px-6 py-3 rounded-full font-semibold transition-colors hover:bg-accent/90 focus:ring-2 focus:ring-accent focus:ring-opacity-50 inline-block;
+    @apply bg-primary text-primary-foreground px-7 py-3 rounded-full font-semibold transition-all hover:bg-accent hover:shadow-lg focus:ring-2 focus:ring-primary/40 inline-block;
   }
-  
+
   .service-card {
-    @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg;
+    @apply bg-card rounded-2xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg;
   }
-  
+
   .service-content {
     @apply p-8;
   }
-  
+
   .service-image {
     @apply bg-muted py-8 px-6 text-center;
   }
-  
+
   .box {
-    @apply bg-muted rounded-lg p-6 shadow-md flex-1 min-w-[300px] text-left;
+    @apply bg-muted rounded-2xl p-6 shadow-sm flex-1 min-w-[300px] text-left;
   }
-  
+
   .box-primary {
     @apply border-l-4 border-primary;
   }
-  
+
   .box-secondary {
     @apply border-l-4 border-secondary;
   }
-  
+
   .box-title {
-    @apply text-primary mb-4 text-xl text-center;
+    @apply text-primary mb-4 text-xl text-center font-heading;
   }
 }
 

@@ -20,7 +20,7 @@ export default function Navbar() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md border-2 border-primary py-2">
+    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/60 shadow-soft py-3">
       <div className="container">
         <nav className="flex items-center justify-between">
           {/* Mobile: Logo + Name */}
@@ -32,19 +32,19 @@ export default function Navbar() {
               height={40}
               className="object-contain w-8 h-8"
             />
-            <span className="font-semibold text-sm leading-tight">Dott.ssa Rossella Strangio</span>
+            <span className="font-heading font-semibold text-sm leading-tight tracking-tight">Dott.ssa Rossella Strangio</span>
           </div>
 
           {/* Desktop Navigation - Centered */}
-          <div className="hidden md:flex space-x-10 flex-1 justify-center">
+          <div className="hidden md:flex gap-2 flex-1 justify-center">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-base font-bold transition-all px-4 py-2 rounded-lg ${
+                className={`relative text-[13px] font-medium tracking-[0.12em] uppercase transition-colors px-4 py-2 rounded-full ${
                   pathname === item.href
                     ? 'text-primary bg-primary/10'
-                    : 'text-foreground hover:text-primary hover:bg-primary/5'
+                    : 'text-foreground/80 hover:text-primary hover:bg-primary/5'
                 }`}
               >
                 {item.label}

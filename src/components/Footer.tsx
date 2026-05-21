@@ -83,7 +83,7 @@ export default function Footer() {
       <div className="container py-14">
         {/* Firma centrale */}
         <div className="text-center">
-          <div className="font-serif text-3xl md:text-4xl tracking-wide">
+          <div className="font-heading text-3xl md:text-4xl tracking-tight font-semibold">
             Rossella <em className="italic font-light text-secondary">Strangio</em>
           </div>
           <div className="mt-2 text-xs md:text-sm uppercase tracking-[0.25em] text-primary-foreground/80">

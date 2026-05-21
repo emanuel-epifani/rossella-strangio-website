@@ -10,36 +10,36 @@ export default function Patients() {
           <h2>{homeContent.patients.title}</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
           {/* Adulti */}
-          <div className="card-base p-8 text-center">
+          <div className="card-base card-hover p-8 text-center">
             <div className="icon-circle-base mx-auto mb-6">
               <User />
             </div>
-            <h3 className="text-xl font-bold text-primary mb-4">{homeContent.patients.items[0].title}</h3>
-            <p className="text-foreground leading-relaxed">
+            <h3 className="font-heading text-xl font-semibold text-foreground mb-3">{homeContent.patients.items[0].title}</h3>
+            <p className="text-foreground/80 leading-relaxed">
               {homeContent.patients.items[0].description}
             </p>
           </div>
 
           {/* Coppie */}
-          <div className="card-base p-8 text-center">
+          <div className="card-base card-hover p-8 text-center">
             <div className="icon-circle-base mx-auto mb-6">
               <Users />
             </div>
-            <h3 className="text-xl font-bold text-primary mb-4">{homeContent.patients.items[1].title}</h3>
-            <p className="text-foreground leading-relaxed">
+            <h3 className="font-heading text-xl font-semibold text-foreground mb-3">{homeContent.patients.items[1].title}</h3>
+            <p className="text-foreground/80 leading-relaxed">
               {homeContent.patients.items[1].description}
             </p>
           </div>
 
           {/* Anziani/Neuropsicologia */}
-          <div className="card-base p-8 text-center">
+          <div className="card-base card-hover p-8 text-center">
             <div className="icon-circle-base mx-auto mb-6">
               <Brain />
             </div>
-            <h3 className="text-xl font-bold text-primary mb-4">{homeContent.patients.items[2].title}</h3>
-            <p className="text-foreground leading-relaxed">
+            <h3 className="font-heading text-xl font-semibold text-foreground mb-3">{homeContent.patients.items[2].title}</h3>
+            <p className="text-foreground/80 leading-relaxed">
               {homeContent.patients.items[2].description}
             </p>
           </div>

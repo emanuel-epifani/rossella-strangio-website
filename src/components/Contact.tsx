@@ -17,11 +17,11 @@ export default function Contact() {
         </div>
 
         <div className="text-center">
-          <p className="text-lg mb-8 text-foreground">
+          <p className="text-lg mb-10 text-foreground/85 max-w-2xl mx-auto">
             {homeContent.contact.description}
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             {homeContent.contact.methods.map((method) => {
               const Icon = contactMethodIcons[method.icon] ?? Phone
               const isWhatsApp = method.icon === 'MessageCircle'
@@ -31,11 +31,13 @@ export default function Contact() {
                   href={method.link}
                   target={isWhatsApp ? '_blank' : undefined}
                   rel={isWhatsApp ? 'noopener noreferrer' : undefined}
-                  className="card-base card-hover p-6"
+                  className="card-base card-hover p-6 flex flex-col items-center"
                 >
-                  <Icon className="text-primary mx-auto mb-3" size={28} />
-                  <h3 className="font-semibold mb-2">{method.title}</h3>
-                  <p className="text-sm break-words">{method.contact}</p>
+                  <div className="icon-circle-base mx-auto mb-4" style={{ width: '3rem', height: '3rem' }}>
+                    <Icon size={22} />
+                  </div>
+                  <h3 className="font-heading text-base font-semibold text-foreground mb-1">{method.title}</h3>
+                  <p className="text-sm break-words text-muted-foreground">{method.contact}</p>
                 </a>
               )
             })}

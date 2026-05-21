@@ -30,8 +30,9 @@ export default function Contattami() {
       <main className="min-h-screen">
         <section className="page-header">
           <div className="container">
-            <h1 className="mb-2 text-4xl font-bold">{contattamiContent.title}</h1>
-            <p className="text-lg">
+            <span className="eyebrow mb-3">Contatti</span>
+            <h1 className="mb-3 mt-3 text-4xl md:text-5xl font-semibold tracking-tight">{contattamiContent.title}</h1>
+            <p className="text-lg text-foreground/75 max-w-2xl">
               {contattamiContent.subtitle}
             </p>
           </div>
@@ -40,7 +41,7 @@ export default function Contattami() {
         {/* Sezione 1: Contatti */}
         <section className="py-16 section-bg-white">
           <div className="container">
-            <h2 className="text-2xl font-bold text-primary mb-8">Contatti</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold text-foreground mb-8 tracking-tight">Contatti</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {contattamiContent.contactMethods.map((method) => {
                 const IconComponent = method.icon === 'Phone' ? Phone : method.icon === 'MessageCircle' ? MessageCircle : Mail
@@ -50,11 +51,13 @@ export default function Contattami() {
                     href={method.link}
                     target={method.icon === 'MessageCircle' ? '_blank' : undefined}
                     rel={method.icon === 'MessageCircle' ? 'noopener noreferrer' : undefined}
-                    className="card-base card-hover p-6 text-center"
+                    className="card-base card-hover p-6 text-center flex flex-col items-center"
                   >
-                    <IconComponent size={32} className="text-primary mb-4 mx-auto" />
-                    <h3 className="font-semibold text-lg mb-2">{method.title}</h3>
-                    <p className="text-foreground break-words">{method.contact}</p>
+                    <div className="icon-circle-base mb-4" style={{ width: '3rem', height: '3rem' }}>
+                      <IconComponent size={20} />
+                    </div>
+                    <h3 className="font-heading font-semibold text-lg mb-1 text-foreground">{method.title}</h3>
+                    <p className="text-muted-foreground break-words text-sm">{method.contact}</p>
                   </a>
                 )
               })}
@@ -65,13 +68,15 @@ export default function Contattami() {
         {/* Sezione 2: Dove Riceve */}
         <section className="py-16 section-bg-white">
           <div className="container">
-            <h2 className="text-2xl font-bold text-primary mb-8">Dove Ricevo</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold text-foreground mb-8 tracking-tight">Dove Ricevo</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Online */}
-              <div className="card-base card-hover p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <Clock size={32} className="text-primary" />
-                  <h3 className="font-semibold text-xl">Online</h3>
+              <div className="card-base card-hover p-7">
+                <div className="flex items-center gap-4 mb-5">
+                  <div className="icon-circle-base" style={{ width: '2.75rem', height: '2.75rem' }}>
+                    <Clock size={20} />
+                  </div>
+                  <h3 className="font-heading font-semibold text-xl text-foreground">Online</h3>
                 </div>
                 <div className="space-y-2">
                   <p className="text-foreground"><strong>Lunedì - Venerdì:</strong> Su appuntamento </p>
@@ -81,10 +86,12 @@ export default function Contattami() {
               </div>
 
               {/* In presenza */}
-              <div className="card-base card-hover p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <MapPin size={32} className="text-primary" />
-                  <h3 className="font-semibold text-xl">In Presenza</h3>
+              <div className="card-base card-hover p-7">
+                <div className="flex items-center gap-4 mb-5">
+                  <div className="icon-circle-base" style={{ width: '2.75rem', height: '2.75rem' }}>
+                    <MapPin size={20} />
+                  </div>
+                  <h3 className="font-heading font-semibold text-xl text-foreground">In Presenza</h3>
                 </div>
                 <p className="text-foreground mb-4">
                   <strong>Studio:</strong> Via Vagnone 2, Torino - Su appuntamento<br />
@@ -105,7 +112,7 @@ export default function Contattami() {
                   </div>
                 </div>
 
-                <div className="relative mb-4">
+                <div className="relative mb-4 overflow-hidden rounded-2xl ring-1 ring-border/60">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.678901234!2d7.656789012!3d45.078901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47791f3b0e0e0e0f%3A0x0!2sVia+Vagnone+2%2C+Torino!5e0!3m2!1sit!2sit!4v1234567890"
                     width="100%"
@@ -114,13 +121,13 @@ export default function Contattami() {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    className="rounded-lg"
+                    className="block"
                   />
                   <a
                     href="https://www.google.com/maps/dir/?api=1&destination=Via+Vagnone+2+Torino"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="absolute inset-0 flex items-center justify-center bg-transparent hover:bg-black/10 transition-colors rounded-lg"
+                    className="absolute inset-0 flex items-center justify-center bg-transparent hover:bg-black/10 transition-colors"
                     aria-label="Calcola percorso su Google Maps"
                   >
                   </a>

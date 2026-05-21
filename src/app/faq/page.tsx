@@ -31,8 +31,9 @@ export default function FAQ() {
         {/* Header */}
         <section className="page-header">
           <div className="container">
-            <h1 className="mb-2 text-4xl font-bold">{faqContent.title}</h1>
-            <p className="text-lg">{faqContent.subtitle}</p>
+            <span className="eyebrow mb-3">Domande frequenti</span>
+            <h1 className="mb-3 mt-3 text-4xl md:text-5xl font-semibold tracking-tight">{faqContent.title}</h1>
+            <p className="text-lg text-foreground/75 max-w-2xl">{faqContent.subtitle}</p>
           </div>
         </section>
 

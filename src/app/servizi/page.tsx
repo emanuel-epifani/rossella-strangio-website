@@ -40,8 +40,9 @@ export default function ComePossoAiutarti() {
         {/* Header */}
         <section className="page-header">
           <div className="container">
-            <h1 className="mb-2 text-4xl font-bold">{serviziContent.title}</h1>
-            <p className="text-lg whitespace-pre-line">{serviziContent.intro}</p>
+            <span className="eyebrow mb-3">Servizi</span>
+            <h1 className="mb-3 mt-3 text-4xl md:text-5xl font-semibold tracking-tight">{serviziContent.title}</h1>
+            <p className="text-lg whitespace-pre-line text-foreground/75 max-w-2xl">{serviziContent.intro}</p>
           </div>
         </section>
 
@@ -73,13 +74,13 @@ export default function ComePossoAiutarti() {
                         </div>
                       )}
                     </div>
-                    <h3 className="font-semibold text-foreground text-center mb-3">{service.title}</h3>
+                    <h3 className="font-heading text-lg font-semibold text-foreground text-center mb-3">{service.title}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line mb-4">
                       {service.fullDescription}
                     </p>
-                    <div className="mt-auto pt-4 border-t border-gray-200">
+                    <div className="mt-auto pt-4 border-t border-border/60">
                       <div className="text-center">
-                        <p className="text-lg font-bold text-primary">{service.price}</p>
+                        <p className="font-heading text-xl font-semibold text-primary">{service.price}</p>
                         {service.priceNote && (
                           <p className="text-xs text-muted-foreground mt-1 whitespace-pre-line">{service.priceNote}</p>
                         )}
@@ -103,14 +104,14 @@ export default function ComePossoAiutarti() {
                 const iconMap = [Calendar, Clock, Video, FileText, Phone]
                 const Icon = iconMap[index % iconMap.length]
                 return (
-                  <div key={index} className="flex gap-4">
+                  <div key={index} className="flex gap-5 items-start">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                        <Icon className="w-6 h-6 text-primary" />
+                      <div className="icon-circle-base" style={{ width: '3rem', height: '3rem' }}>
+                        <Icon className="w-5 h-5 text-primary" />
                       </div>
                     </div>
-                    <div className="flex-1">
-                      <h3 className="font-semibold text-xl mb-2">{item.title}</h3>
+                    <div className="flex-1 pt-1">
+                      <h3 className="font-heading text-xl font-semibold mb-2 text-foreground">{item.title}</h3>
                       <p className="text-muted-foreground leading-relaxed">{item.description}</p>
                     </div>
                   </div>
