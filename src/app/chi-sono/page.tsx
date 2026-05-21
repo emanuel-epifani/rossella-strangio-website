@@ -45,7 +45,7 @@ export default function ChiSono() {
               {/* Foto a sinistra */}
               <div className="relative">
                 <Image
-                  src="/images/chi-sono.png"
+                  src="/images/chi-sono.jpeg"
                   alt="Foto Dott.ssa Rossella Strangio"
                   width={500}
                   height={300}

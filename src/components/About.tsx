@@ -10,11 +10,11 @@ export default function About() {
           {/* Immagine */}
           <figure className="flex-1 lg:max-w-xs mb-10">
             <Image
-              src="/images/chi-sono.png"
+              src="/images/selfie-home.jpeg"
               alt={homeContent.about.imageAlt}
               width={200}
-              height={200}
-              className="rounded-xl shadow-2xl w-full max-w-[200px] h-auto mx-auto lg:mx-0"
+              height={300}
+              className="rounded-xl shadow-2xl mx-auto lg:mx-0"
               priority
             />
           </figure>
