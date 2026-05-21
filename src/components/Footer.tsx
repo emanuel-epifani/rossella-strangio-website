@@ -79,26 +79,38 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="bg-primary text-primary-foreground">
-      <div className="container py-14">
-        {/* Firma centrale */}
-        <div className="text-center">
-          <div className="font-heading text-3xl md:text-4xl tracking-tight font-semibold">
-            Rossella <em className="italic font-light text-secondary">Strangio</em>
-          </div>
-          <div className="mt-2 text-xs md:text-sm uppercase tracking-[0.25em] text-primary-foreground/80">
-            Psicologa · Psicoterapeuta · Torino
-          </div>
-        </div>
+    <footer className="relative bg-footer text-white/85">
+      {/* Hairline gradient: chiusura visiva in alto */}
+      <div
+        aria-hidden
+        className="absolute top-0 left-0 right-0 h-px"
+        style={{
+          background:
+            'linear-gradient(90deg, transparent 0%, hsl(var(--primary) / 0.7) 50%, transparent 100%)',
+        }}
+      />
 
-        {/* Divider */}
-        <hr className="my-10 border-t border-primary-foreground/20" />
+      <div className="container py-12 md:py-14">
+        {/* Griglia integrata 12 colonne: brand + 3 sezioni */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8">
+          {/* Brand block */}
+          <div className="md:col-span-4">
+            <div className="font-heading text-3xl md:text-4xl tracking-tight font-semibold leading-none">
+              Rossella{' '}
+              <em className="italic font-light text-primary">Strangio</em>
+            </div>
+            <div className="mt-3 text-[11px] uppercase tracking-[0.25em] text-white/55">
+              Psicologa · Psicoterapeuta · Torino
+            </div>
+            <p className="mt-5 text-sm leading-relaxed text-white/65 max-w-xs">
+              Percorsi di psicoterapia cognitivo-comportamentale, in studio a
+              Torino e online.
+            </p>
+          </div>
 
-        {/* Tre colonne */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
           {/* Contatti */}
-          <div>
-            <h4 className="text-xs uppercase tracking-[0.2em] font-semibold mb-5">
+          <div className="md:col-span-3">
+            <h4 className="text-[11px] uppercase tracking-[0.22em] font-semibold mb-5 text-white/55">
               Contatti
             </h4>
             <ul className="space-y-3 text-sm">
@@ -106,7 +118,7 @@ export default function Footer() {
                 <PhoneIcon />
                 <a
                   href="tel:+393343071131"
-                  className="text-primary-foreground/90 hover:text-primary-foreground transition-colors"
+                  className="text-white/85 hover:text-primary transition-colors"
                 >
                   +39 334 307 1131
                 </a>
@@ -117,7 +129,7 @@ export default function Footer() {
                 </span>
                 <a
                   href="mailto:rossella.strangio.psicologa@gmail.com"
-                  className="text-primary-foreground/90 hover:text-primary-foreground transition-colors break-all"
+                  className="text-white/85 hover:text-primary transition-colors break-all"
                 >
                   rossella.strangio.psicologa@gmail.com
                 </a>
@@ -128,7 +140,7 @@ export default function Footer() {
                   href="https://maps.google.com/?q=Via+Vagnone+2,+Torino"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary-foreground/90 hover:text-primary-foreground transition-colors"
+                  className="text-white/85 hover:text-primary transition-colors"
                 >
                   Via Vagnone 2, Torino
                 </a>
@@ -137,8 +149,8 @@ export default function Footer() {
           </div>
 
           {/* Esplora */}
-          <div>
-            <h4 className="text-xs uppercase tracking-[0.2em] font-semibold mb-5">
+          <div className="md:col-span-2">
+            <h4 className="text-[11px] uppercase tracking-[0.22em] font-semibold mb-5 text-white/55">
               Esplora
             </h4>
             <ul className="space-y-3 text-sm">
@@ -146,7 +158,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-primary-foreground/90 hover:text-primary-foreground transition-colors"
+                    className="text-white/85 hover:text-primary transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -156,8 +168,8 @@ export default function Footer() {
           </div>
 
           {/* Albo + social */}
-          <div>
-            <h4 className="text-xs uppercase tracking-[0.2em] font-semibold mb-5">
+          <div className="md:col-span-3">
+            <h4 className="text-[11px] uppercase tracking-[0.22em] font-semibold mb-5 text-white/55">
               Riferimenti Albo
             </h4>
             <p className="text-sm leading-relaxed">
@@ -165,14 +177,14 @@ export default function Footer() {
                 href="https://ordinepsicologi.piemonte.it/albo-vista/?id=8933"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-primary-foreground transition-colors"
+                className="text-white/85 hover:text-primary transition-colors"
               >
                 Ordine Psicologi del Piemonte
                 <br />
-                <span className="text-primary-foreground/70">N° Iscrizione 9144</span>
+                <span className="text-white/55">N° Iscrizione 9144</span>
               </a>
             </p>
-            <p className="text-sm mt-4">P. IVA 13434760016</p>
+            <p className="text-sm mt-4 text-white/65">P. IVA 13434760016</p>
 
             <div className="flex items-center gap-3 mt-6">
               <a
@@ -180,7 +192,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-colors"
+                className="w-9 h-9 rounded-full bg-white/5 hover:bg-primary hover:text-footer flex items-center justify-center transition-colors ring-1 ring-white/10"
               >
                 <InstagramIcon />
               </a>
@@ -189,7 +201,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-colors"
+                className="w-9 h-9 rounded-full bg-white/5 hover:bg-primary hover:text-footer flex items-center justify-center transition-colors ring-1 ring-white/10"
               >
                 <LinkedInIcon />
               </a>
@@ -198,13 +210,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom strip */}
-        <div className="mt-12 pt-6 border-t border-primary-foreground/20 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-primary-foreground/80">
+        <div className="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/55">
           <span>
             © {year} Dott.ssa Rossella Strangio · Tutti i diritti riservati
           </span>
-          <span className="text-primary-foreground/70">
-            Privacy Policy · Cookie Policy
-          </span>
+          <span>Privacy Policy · Cookie Policy</span>
         </div>
       </div>
     </footer>

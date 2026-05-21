@@ -27,6 +27,7 @@
     --border: 32 25% 88%;                /* warm border */
     --input: 32 25% 88%;
     --ring: 30 38% 62%;
+    --footer: 25 22% 14%;                /* dark cocoa caldo per il footer */
     --radius: 1rem;
 
     /* Font families - definite qui e usate in tailwind.config.ts */
@@ -56,6 +57,7 @@
     --border: 25 15% 20%;
     --input: 25 15% 20%;
     --ring: 30 38% 62%;
+    --footer: 25 22% 10%;
   }
 
   /* Stili base del body - applicati a tutta la pagina */
