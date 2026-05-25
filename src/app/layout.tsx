@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter, Fraunces } from 'next/font/google'
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { defaultMetadata } from '@/lib/seo'
+import {Analytics} from "@vercel/analytics/next";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="it" className={`${inter.variable} ${fraunces.variable}`}>
       <body className="font-sans antialiased">
         {children}
+        <Analytics />
         <SpeedInsights />
       </body>
     </html>
