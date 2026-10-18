@@ -42,17 +42,15 @@ export default function ChiSono() {
         {/* Layout a due colonne */}
         <section className="py-16 section-bg-white">
           <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
               {/* Foto a sinistra */}
-              <div className="portrait-frame inline-block">
-                <Image
-                  src="/images/chi-sono.jpeg"
-                  alt="Foto Dott.ssa Rossella Strangio"
-                  width={500}
-                  height={300}
-                  className="relative rounded-2xl shadow-soft-lg h-auto w-auto ring-1 ring-border/60"
-                />
-              </div>
+              <Image
+                src="/images/chi-sono.png"
+                alt="Foto Dott.ssa Rossella Strangio"
+                width={560}
+                height={424}
+                className="w-full h-auto"
+              />
 
               {/* Testo a destra */}
               <div className="prose prose-lg max-w-none">

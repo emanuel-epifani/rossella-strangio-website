@@ -12,7 +12,7 @@ export const siteConfig = {
   phone: '+39 334 307 1131',
   email: 'rossella.strangio.psicologa@gmail.com',
   ogImage: '/images/logo-website.png',
-  portraitImage: '/images/selfie-home.jpeg',
+  portraitImage: '/images/selfie-home.png',
   socialProfiles: [
     'https://www.instagram.com/la_psicoross/',
     'https://www.linkedin.com/in/rossella-strangio-7b2b29320/',

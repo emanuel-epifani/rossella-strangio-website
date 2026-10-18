@@ -6,19 +6,17 @@ export default function About() {
   return (
     <section id="about" className="py-16 section-bg-white">
       <div className="container">
-        <div className="flex flex-col lg:flex-row items-center gap-12 px-4 md:px-10">
+        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24 px-4 md:px-10">
           {/* Immagine */}
-          <figure className="flex-1 lg:max-w-xs mb-4 lg:mb-0">
-            <div className="portrait-frame inline-block">
-              <Image
-                src="/images/selfie-home.jpeg"
-                alt={homeContent.about.imageAlt}
-                width={200}
-                height={300}
-                className="relative rounded-2xl shadow-soft-lg mx-auto lg:mx-0 ring-1 ring-border/60"
-                priority
-              />
-            </div>
+          <figure className="flex-1 lg:max-w-sm mb-4 lg:mb-0">
+            <Image
+              src="/images/selfie-home.png"
+              alt={homeContent.about.imageAlt}
+              width={384}
+              height={461}
+              className="w-full h-auto"
+              priority
+            />
           </figure>
 
           {/* Testo */}
